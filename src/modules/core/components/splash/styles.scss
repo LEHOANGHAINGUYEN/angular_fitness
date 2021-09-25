@@ -1,0 +1,47 @@
+.splash-wrapper {
+  .splash-screen {
+    background-color: #f48120;
+    min-height: 100%;
+  }
+  .splash-out {
+    @include prefix((transition: visibility 0s 2s opacity 2s linear), webkit moz ms);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .flash-container {
+    @include animation(flash linear 1s infinite);
+    text-align: center;
+    .splash-logo {
+      @include transition(transform ease 2000ms);
+      margin-top: 25%;
+      width: 300px;
+      height: 100px;
+      &.slide-top {
+        @include transform(translate3d(0, -300px, 0));
+      }
+    }
+  }
+} // sass-lint:disable no-vendor-prefixes
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

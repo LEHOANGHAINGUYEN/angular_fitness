@@ -1,0 +1,18 @@
+.leader-board-corporate {
+  padding-top: 32px;
+  padding-left: 30px;
+  .title-leader-board {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: .6;
+    letter-spacing: .8px;
+    text-align: left;
+    color: #111111;
+    margin-bottom: 10px;
+    margin-left: 30;
+  }
+  .button-leader-board-wrapper {
+    padding-top: 30px;
+    display: flex;
+  }
+}

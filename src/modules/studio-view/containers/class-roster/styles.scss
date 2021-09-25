@@ -1,0 +1,371 @@
+.class-roster-wrapper {
+  padding-top: 5%;
+  &.row {
+    margin-right: 0;
+  }
+  .top-container {
+    .coach-info {
+      display: flex;
+      height: 196px;
+      justify-content: center;
+      align-items: center;
+
+      .coach-img {
+        height: 120px;
+        padding: 20px 0 17px 21px;
+      }
+      .coach-name {
+        font-size: 36px;
+        font-weight: 700;
+        height: 41px;
+      }
+    }
+    .date-time-rect-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 196px;
+      flex-direction: column;
+      .date-wapper {
+        margin-top: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        position: static;
+        box-shadow: none;
+      }
+      .class-time-name {
+        .time {
+          font-size: 36px;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .bottom-container {
+    .refresh-ic {
+      width: 40px;
+      position: absolute;
+      right: 58px;
+      top: -149px;
+      opacity: .4;
+      cursor: pointer;
+    }
+    .title {
+      text-align: center;
+      position: absolute;
+      top: -189px;
+      left: 26%;
+      width: 51%;
+      .select-time {
+        text-transform: uppercase;
+        color: #dadada;
+        letter-spacing: 3px;
+        font-size: 95px;
+        font-style: normal;
+        span {
+          font-family: FontBold !important;
+        }
+      }
+      .challenge-name {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        top: -20px;
+        .label-challenge-of-the-day {
+          color: #f06d1a;
+        }
+      }
+    }
+    .list-member.row {
+      margin: 0;
+      overflow-y: auto;
+      height: 70%;
+      &::-webkit-scrollbar-track {
+        background-color: black;
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar {
+        width: 8px;
+        background-color: black;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #7e7e7e;
+        border: 4px solid #555555;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+@media (min-height: 1000px) {
+  .class-roster-wrapper {
+    .bottom-container {
+      .list-member.row {
+        height: 72%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .class-roster-wrapper {
+    .top-container {
+      .date-time-rect-container {
+        min-height: 222px;
+      }
+      .coach-info {
+        min-height: 222px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .class-roster-wrapper {
+    .top-container {
+      .date-time-rect-container {
+        border-bottom: 2px solid #565758;
+        color: #f06d1a;
+        min-height: 250px;
+        .date-wapper {
+          .content-left {
+            height: 71px;
+          }
+          .content-right {
+            height: 71px;
+          }
+        }
+        .class-time-name {
+          .time {
+            font-size: 29px;
+          }
+        }
+      }
+
+      .coach-info {
+        .coach-img {
+          height: 117px;
+          padding: 22px 0 14px 21px;
+        }
+        .coach-name {
+          font-size: 29px;
+        }
+      }
+    }
+
+    .bottom-container {
+      .title {
+        .select-time {
+          font-size: 80px;
+        }
+        .challenge-name {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .class-roster-wrapper {
+    .bottom-container {
+      .title {
+        position: static;
+        width: 100%;
+        .select-time {
+          font-size: 95px;
+        }
+        .challenge-name {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1599px) {
+  .class-roster-wrapper {
+    .bottom-container {
+      .title {
+        left: 26%;
+        .select-time {
+          font-size: 80px;
+        }
+        .challenge-name {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+.class-roster-wrapper {
+  width: 100%;
+  margin: 0;
+  .info-font {
+    font-family: RegularCondItalic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .left-container {
+    .date-time-rect-container {
+      display: grid;
+      text-align: center;
+      margin-top: 60px;
+
+      .date-wapper {
+        margin: 0;
+        display: inline-block;
+        position: static;
+        width: 190px;
+        height: 190px;
+
+        .content-left,
+        .content-right {
+          width: 50%;
+          height: 160px;
+          font-size: 40px;
+        }
+
+        .content {
+          width: 100%;
+          position: relative;
+          top: -130px;
+
+          .date-text {
+            font-style: normal;
+            color: #f58220;
+          }
+
+          label {
+            @extend .date-text;
+            font-size: 30px;
+            font-weight: initial;
+          }
+
+          .date {
+            @extend .date-text;
+            font-size: 50px;
+            font-family: FontBold;
+          }
+        }
+      }
+
+      .class-time-name {
+        .time {
+          @extend .info-font;
+          font-weight: bold;
+          letter-spacing: 2px;
+          text-align: center;
+          font-size: 70px;
+        }
+
+        .name {
+          @extend .info-font;
+          font-weight: bold;
+          color: #f06d1a;
+          text-align: center;
+          font-size: 35px;
+          position: relative;
+          top: -20px;
+        }
+      }
+
+      .border-bottom {
+        border: 1px solid #979797;
+        opacity: .4;
+        width: 95%;
+        margin: 20px auto 20px auto;
+      }
+    }
+
+    .coach-info {
+      text-align: center;
+      padding-top: 30px;
+
+      .coach-img {
+        width: 180px;
+      }
+
+      .coach-name {
+        @extend .info-font;
+        padding-top: 25px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .right-container {
+    .refresh-ic {
+      width: 40px;
+      position: absolute;
+      right: 80px;
+      top: 115px;
+      opacity: .4;
+    }
+    .title {
+      text-align: center;
+      .select-time {
+        text-transform: uppercase;
+        color: #dadada;
+        letter-spacing: 3px;
+        font-size: 95px;
+        font-style: normal;
+        span {
+          font-family: FontBold !important;
+        }
+      }
+    }
+
+    .challenge-name {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: relative;
+      top: -20px;
+      .label-challenge-of-the-day {
+        color: #f06d1a;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .class-roster-wrapper {
+    min-height: 100%;
+  }
+  .attendance-button {
+    padding-left: 8px;
+    .attendance-icon {
+      width: 70px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .class-roster-wrapper {
+    .right-container {
+      .refresh-ic {
+        top: 84px;
+      }
+      .title {
+        .select-time {
+          font-size: 60px !important;
+        }
+        .challenge-name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .attendance-btn-wrapper {
+    width: 100%;
+  }
+}

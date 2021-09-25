@@ -1,0 +1,131 @@
+.challenge-item {
+  .thumbnail {
+    padding: 0;
+    position: relative;
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+      font-size: 28px;
+      opacity: 1;
+      color: white;
+    }
+  }
+
+  .challenge-item-header {
+    height: 124px;
+    width: 100%;
+    background-color: #434b51;
+    border: none;
+    .challenge-item-name {
+      display: flex;
+      font-size: 21px;
+      text-align: left;
+      color: #ffffff;
+      height: 100%;
+      font-weight: bold;
+      .challenge-item-content {
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
+        .challenge-date {
+          display: flex;
+          margin-top: 15px;
+          .challenge-start-date {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            font-size: 14px;
+            font-weight: normal;
+            label {
+              font-weight: normal;
+            }
+          }
+          .challenge-end-date {
+            @extend .challenge-start-date;
+          }
+        }
+      }
+
+      .close {
+        font-size: 40px;
+        color: floralwhite;
+        opacity: .8;
+        position: absolute;
+        right: 24px;
+        top: 0;
+      }
+    }
+
+    .challenge-item-icon {
+      float: left;
+      width: 122px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+      }
+      &.dritri-sprint {
+        height: 70%;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .challenge-item-body {
+    padding: 10px;
+    color: #555555;
+    border: 1px solid #e4e6e7;
+
+    label {
+      color: #333333;
+    }
+
+    .challenge-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  .challenge-action {
+    padding: 10px 30px 10px 10px;
+    text-align: right;
+
+    .btn-challenge-action {
+      height: 30px;
+      width: 80px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.challenge-item:hover {
+  .challenge-item-header {
+    background-color: #f58220;
+  }
+}
+
+.delete-confirmation {
+  .modal-header {
+    display: none;
+  }
+
+  .modal-body {
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .modal-footer {
+    text-align: center;
+
+    .btn {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+}

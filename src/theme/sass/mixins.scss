@@ -1,0 +1,126 @@
+/* MIXINs */
+
+/// Mixin to prefix several properties at once
+/// @author Hugo Giraudel
+/// @param {Map} $declarations - Declarations to prefix
+/// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($declarations, $prefixes: ()) {
+  @each $property,
+  $value in $declarations {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    } // Output standard non-prefixed declaration
+    #{$property}: $value;
+  }
+}
+
+@mixin display-flex() {
+  // sass-lint:disable no-duplicate-properties no-vendor-prefixes
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin transition($val: ease .5s) {
+  @include prefix((transition: $val), webkit moz o ms);
+}
+
+@mixin background-clip($val) {
+  @include prefix((background-clip: $val), webkit moz o ms);
+}
+
+@mixin animation($val) {
+  @include prefix((animation: $val), webkit moz o ms);
+}
+
+@mixin animation-delay($val) {
+  @include prefix((animation-delay: $val), webkit moz o ms);
+}
+
+@mixin text-shadow($top: 3px, $left: 3px, $blur: 3px, $colour: #333) {
+  @include prefix((text-shadow: $top $left $blur $colour), webkit moz o ms);
+}
+
+@mixin box-shadow($top: 3px, $left: 3px, $blur: 4px, $colour: #444, $inset: '') {
+  @include prefix((box-shadow: #{$inset} $top $left $blur $colour), webkit moz);
+}
+
+@mixin rounded-corners($tl: 4px, $tr: 4px, $br: 4px, $bl: 4px) {
+  @include prefix((border-radius: $tl $tr $br $bl), webkit moz o);
+}
+
+@mixin border-radius($val) {
+  @include prefix((border-radius: $val), webkit moz o);
+}
+
+@mixin rotate($val: -2deg) {
+  @include prefix((transform: rotate($val)), webkit moz o ms);
+}
+
+@mixin transform($val) {
+  @include prefix((transform: $val), webkit moz ms);
+}
+
+@mixin transform-origin($val) {
+  @include prefix((transform-origin: $val), webkit moz ms);
+}
+
+@mixin transform-style($val) {
+  @include prefix((transform-style: $val), webkit moz ms);
+}
+
+@mixin perspective($val) {
+  @include prefix((perspective: $val), webkit moz ms);
+}
+
+@mixin perspective-origin($val) {
+  @include prefix((perspective-origin: $val), webkit moz ms);
+}
+
+@mixin box-sizing($val) {
+  @include prefix((box-sizing: $val), webkit moz ms);
+}
+
+@mixin disable-user-select() {
+  @include prefix((user-select: none), webkit moz ms khtml);
+  -webkit-touch-callout: none;
+}
+
+@mixin font($name, $src, $hash) {
+  @font-face {
+    font-family: $name;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/' + $src + '.eot?#iefix') format('embedded-opentype'), url('fonts/' + $src + '.woff') format('woff'), url('fonts/' + $src + '.ttf') format('truetype'), url('fonts/' + $src + '.svg#' + $hash) format('svg');
+  }
+}
+
+@mixin dropdown_fix {
+  display: block;
+  background: $orange;
+  position: absolute;
+  width: 88px;
+  height: 15px;
+  left: 15px;
+  top: 90%;
+}
+
+@mixin mq($point) {
+  @if $point==p {
+    @media all and (max-width: 1000px) {
+      @content;
+    }
+  }
+  @else if $point==d {
+    @media all and (min-width: 1001px) {
+      @content;
+    }
+  }
+  @else if $point==ps {
+    @media all and (max-width: 319px) {
+      @content;
+    }
+  }
+}

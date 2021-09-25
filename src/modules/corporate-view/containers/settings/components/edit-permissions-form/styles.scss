@@ -1,0 +1,54 @@
+.permissions-form-modal {
+  top: -100px;
+}
+
+.permissions-form-header {
+  .modal-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.permissions-form {
+  margin-bottom: 30px;
+  .label-group {
+    border-bottom: solid 1px #dfe3e6;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .info-permissions {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    label.title {
+      margin-top: 20px;
+    }
+    .col-md-2 {
+      font-weight: bold;
+    }
+  }
+  .action-permissions {
+    text-align: center;
+    margin-top: 50px;
+    .btn-cancel {
+      border-radius: 5px;
+      box-shadow: 0 0 7.6px .4px rgba(60, 58, 56, .2);
+      border: solid 1px #5a6064;
+      margin-right: 10px;
+      background-color: #fff;
+      font-size: 20px;
+    }
+    .btn:hover,
+    .btn.focus,
+    .btn:focus {
+      color: black;
+    }
+    .btn-primary[disabled]:hover {
+      color: #fff;
+    }
+  }
+}

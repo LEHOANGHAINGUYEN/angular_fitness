@@ -1,0 +1,44 @@
+.chart {
+  width: 98%;
+  height: 524px;
+  background-color: #ffffff;
+  border: solid 1px #e4e6e7;
+  padding-left: 31px;
+  .title-chart {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 2.4;
+    letter-spacing: .6px;
+    text-align: left;
+    color: #111111;
+  }
+  .division {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.75;
+    text-align: left;
+    color: #333333;
+    float: right;
+    position: relative;
+    right: 195px;
+    top: -52px;
+  }
+  .dropdown {
+    width: 130px;
+    height: 0;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: relative;
+    font-size: 15px;
+    top: -55px;
+    float: right;
+  }
+  // sass-lint:disable class-name-format
+  .Select-clear-zone {
+    display: none;
+  }
+  // sass-lint:enable class-name-format
+  [class*='-creditgroup'] {
+    display: none;
+  }
+}

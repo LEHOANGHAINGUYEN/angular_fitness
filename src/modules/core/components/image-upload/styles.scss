@@ -1,0 +1,52 @@
+.content-upload {
+  margin-top: 20px;
+  .upload-file {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    .upload-image {
+      display: flex;
+      .file-upload-value {
+        padding-left: 10px;
+        border: 1px solid #dadada;
+        border-radius: 4px 0 0 4px;
+        height: 34px;
+        width: 260px;
+      }
+      .custom-file-upload {
+        background-color: #f58220;
+        color: fff;
+        font-weight: 100;
+        border-radius: 0 4px 4px 0;
+        border: 1px solid #dadada;
+        border-color: #f58220;
+        padding: 6px;
+        &.disabled {
+          opacity: .65;
+          pointer-events: none;
+        }
+      }
+    }
+
+    input[type='file'] {
+      display: none;
+    }
+
+    .input-form {
+      .text-danger-tooltip {
+        margin-top: 38px;
+        height: 34px;
+        width: 100%;
+        line-height: 10px;
+      }
+    }
+  }
+  .challenge-image {
+    text-align: center;
+    img {
+      width: 200px;
+      height: 100px;
+      object-fit: contain;
+    }
+  }
+}

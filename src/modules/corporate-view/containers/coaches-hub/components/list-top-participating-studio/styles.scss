@@ -1,0 +1,61 @@
+.list-top {
+  width: 98%;
+  height: 373px;
+  background-color: #ffffff;
+  border: solid 1px #e4e6e7;
+  margin-top: 15px;
+  padding-left: 11px;
+  .title {
+    height: 6px;
+    font-size: 24px;
+    line-height: .86;
+    letter-spacing: .6px;
+    font-weight: bold;
+    text-align: left;
+    color: #111111;
+    margin-top: 28;
+    margin-left: 4px;
+  }
+  .row {
+    @include display-flex();
+    width: 97%;
+    height: 55px;
+    background-color: #ffffff;
+    border: solid 1px #ced3d6;
+    margin: 2px auto;
+    .rank-1 {
+      width: 25px;
+      padding-top: 12px;
+      margin-top: 0;
+      margin-left: 23px;
+      margin-right: 20px;
+      color: #ffffff;
+      text-align: center;
+      background: url('./images/1.png') no-repeat center center;
+    }
+    .rank-2 {
+      @extend .rank-1;
+      background: url('./images/2.png') no-repeat center center;
+    }
+    .rank-3 {
+      @extend .rank-1;
+      background: url('./images/3.png') no-repeat center center;
+    }
+    .rank-4 {
+      @extend .rank-1;
+      background: url('./images/4.png') no-repeat center center;
+    }
+    .rank-5 {
+      @extend .rank-4;
+    }
+    .address {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: .5px;
+      text-align: left;
+      color: #333333;
+      margin-top: 17px;
+    }
+  }
+}

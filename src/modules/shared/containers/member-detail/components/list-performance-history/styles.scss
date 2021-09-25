@@ -1,0 +1,115 @@
+.background-member-status {
+  width: 90%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+  padding-bottom: 10px;
+  .header-performance-history {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #18191b;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 0 25px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+    .switch-container {
+      float: right;
+      margin: auto;
+      font-style: normal;
+    }
+  }
+  .no-data-text {
+    @include display-flex();
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    font-size: 30px;
+    color: #aeaeae;
+    text-transform: none;
+  }
+  table.performance-history-table {
+    width: 100%;
+    border: none;
+    tr {
+      &:nth-child(even) {
+        background: #f7f7f7;
+      }
+    }
+    td {
+      height: 100px;
+      font-size: 23px;
+      text-align: center;
+      color: #39393a;
+      &:last-child {
+        font-family: FontBold;
+      }
+    }
+    th {
+      @extend td;
+      font-size: 20px;
+      height: 50px;
+      border-bottom: 1px solid #dadada;
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase;
+      span {
+        font-family: FontBold;
+      }
+    }
+    td,
+    th {
+      i.orange-star {
+        font-size: 18px;
+        color: #f58220;
+        margin-right: 10px;
+      }
+      span.no-star {
+        margin-left: 15px;
+      }
+    }
+    td.no-data-text {
+      height: 250px;
+      font-size: 30px;
+      color: #aeaeae;
+      text-transform: none;
+      span {
+        font-family: FontRegular;
+        font-weight: normal;
+      }
+    }
+  }
+  .date-wapper {
+    margin: auto;
+    width: 100px;
+    height: 90px;
+    position: relative;
+    .content-left {
+      width: 50%;
+      height: 90px;
+      font-size: 20px;
+    }
+    .content-right {
+      width: 50%;
+      height: 90px;
+      font-size: 20px;
+    }
+    .content {
+      height: 90px;
+      width: 100px;
+    }
+    label,
+    .date {
+      font-size: 16px;
+      color: #f58420;
+      font-style: normal;
+    }
+    .date {
+      font-size: 18px;
+      font-family: FontBold;
+    }
+  }
+}

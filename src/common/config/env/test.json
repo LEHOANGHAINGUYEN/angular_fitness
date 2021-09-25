@@ -1,0 +1,5 @@
+{
+  "UnauthorizeEndpoint": "https://5845mishe5.execute-api.us-east-1.amazonaws.com/dev/no-auth/api",
+  "AuthorizeEndpoint": "https://5845mishe5.execute-api.us-east-1.amazonaws.com/dev/api",
+  "PageSize": 50
+}

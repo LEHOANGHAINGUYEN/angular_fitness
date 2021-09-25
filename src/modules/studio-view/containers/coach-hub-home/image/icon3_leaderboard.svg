@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="113px" viewBox="0 0 152 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Coach's-Hub-Screen" transform="translate(-333.000000, -493.000000)">
+            <g id="leaderboard" transform="translate(199.000000, 367.000000)">
+                <g id="icon" transform="translate(134.000000, 125.000000)">
+                    <g id="1">
+                        <rect id="Rectangle-10" fill="#F58220" x="41.3529412" y="9.83809524" width="110.647059" height="9.94285714" rx="4.97142857"></rect>
+                        <ellipse id="Oval-4" fill="#F58220" cx="13.9705882" cy="14.8095238" rx="13.9705882" ry="13.8095238"></ellipse>
+                        <text font-family="Klavika-MediumCondensed, Klavika" font-size="24" font-style="condensed" font-weight="500" letter-spacing="3.33333349" fill="#FFFFFF">
+                            <tspan x="10" y="22">1</tspan>
+                        </text>
+                    </g>
+                    <g id="2" transform="translate(0.000000, 42.000000)">
+                        <rect id="Rectangle-10" fill="#F58220" x="41.625" y="9.83809524" width="84.375" height="9.94285714" rx="4.97142857"></rect>
+                        <ellipse id="Oval-4" fill="#F58220" cx="14.0625" cy="14.8095238" rx="14.0625" ry="13.8095238"></ellipse>
+                        <text font-family="Klavika-MediumCondensed, Klavika" font-size="24" font-style="condensed" font-weight="500" letter-spacing="3.33333349" fill="#FFFFFF">
+                            <tspan x="9.125" y="22.4142857">2</tspan>
+                        </text>
+                    </g>
+                    <g id="2" transform="translate(0.000000, 85.000000)">
+                        <rect id="Rectangle-10" fill="#F58220" x="40.9642857" y="9.83809524" width="52.0357143" height="9.94285714" rx="4.97142857"></rect>
+                        <ellipse id="Oval-4" fill="#F58220" cx="13.8392857" cy="14.8095238" rx="13.8392857" ry="13.8095238"></ellipse>
+                        <text id="3" font-family="Klavika-MediumCondensed, Klavika" font-size="24" font-style="condensed" font-weight="500" letter-spacing="3.75" fill="#FFFFFF">
+                            <tspan x="9.41071429" y="22.4142857">3</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

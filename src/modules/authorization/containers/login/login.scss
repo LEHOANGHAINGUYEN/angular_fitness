@@ -1,0 +1,213 @@
+.wrapper-center-login {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(315.23deg, #19171f 0%, #2d2a37 100%);
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .28);
+  padding-top: 5%;
+
+  &.wrapper-language {
+    background: none;
+    box-shadow: none;
+    padding-top: 0;
+
+    .header-title {
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      min-width: 100%;
+      background-color: #fff;
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .15);
+
+      img {
+        height: 63.09px;
+        width: 48.55px;
+      }
+
+      .title {
+        height: 43px;
+        width: 262px;
+        color: #6f767b;
+        font-family: Klavika;
+        font-size: 36px;
+        font-style: italic;
+        letter-spacing: .69px;
+        line-height: 43px;
+        text-transform: uppercase;
+      }
+    }
+    .language-setting-wrapper {
+      padding-top: 142px;
+      height: 100%;
+    }
+  }
+
+  .select-language {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .col-2 {
+    column-count: 1;
+    text-align: center;
+    width: 500px;
+    margin: 60px auto 0 auto;
+  }
+
+  .switch-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .txt-switch {
+      font-size: 20px;
+      line-height: .34;
+      letter-spacing: 1.4px;
+      text-align: center;
+      margin-top: 12px;
+      margin-right: 20px;
+    }
+  }
+
+  .form-container {
+    padding-top: 40px;
+
+    .input {
+      border-radius: 0;
+    }
+
+    .input-corporate {
+      width: 500px;
+      height: 60px;
+      padding-left: 64px;
+      border: solid 1px #ced3d6;
+      font-size: 20px;
+      font-stretch: condensed;
+      line-height: 1.2;
+      letter-spacing: .6px;
+      text-align: left;
+      color: #333333;
+
+      &::-webkit-input-placeholder {
+        font-size: 20px;
+      }
+    }
+
+    .input-password-corporate {
+      @extend .input-corporate;
+      background: #fff url('./images/Password-Inactive.svg') no-repeat scroll 24px;
+      background-size: 24px;
+      width: 96%;
+
+      &:focus {
+        background: #fff url('./images/Password-Active.svg') no-repeat scroll 24px;
+        background-size: 24px;
+        outline-color: #f48120;
+      }
+    }
+
+    .input-username-corporate {
+      @extend .input-corporate;
+      background: #fff url('./images/user.svg') no-repeat scroll 24px;
+      background-size: 16px;
+      width: 96%;
+
+      &:focus {
+        background: #fff url('./images/userEnable.svg') no-repeat scroll 24px;
+        background-size: 16px;
+        outline-color: #f48120;
+      }
+    }
+
+    .input-password-studio {
+      width: 96%;
+      height: 60px;
+      padding-left: 64px;
+      background: #fff url('./images/Password-Inactive.svg') no-repeat scroll 24px;
+      background-size: 24px;
+      border: solid 1px #ced3d6;
+      font-size: 20px;
+      font-stretch: condensed;
+      line-height: 1.2;
+      letter-spacing: .6px;
+      text-align: left;
+      color: #333333;
+
+      &:focus {
+        background: #fff url('./images/Password-Active.svg') no-repeat scroll 24px;
+        background-size: 24px;
+        outline-color: #f48120;
+      }
+
+      &::-webkit-input-placeholder {
+        font-size: 20px;
+      }
+    }
+
+    .i-password {
+      margin-top: 15px;
+    }
+  }
+
+  .header-logo {
+    .logo-web {
+      margin: 0 15px 70px 30px;
+    }
+
+    .inclined-line {
+      @include transform(skew(-20deg));
+      clear: both;
+      border: .06em solid #fff;
+      width: 0;
+      height: 65px;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .fitness-challenge-application {
+      font-size: 34px;
+      display: inline-block;
+      color: #ffffff;
+      font-style: italic;
+      text-transform: uppercase;
+      margin: 8px;
+      vertical-align: top;
+
+      span {
+        font-family: FontBold;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .dropdown-studio {
+    width: 500px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #ced3d6;
+    margin-top: 20px;
+  }
+
+  .forgot-password {
+    font-size: 18px;
+    font-stretch: condensed;
+    color: #333333;
+    margin: 18px 0 35px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 20px;
+  }
+
+  .back-to-login {
+    @extend .forgot-password;
+    padding: 0;
+  }
+
+  .select-other-language {
+    @extend .forgot-password;
+  }
+}

@@ -1,0 +1,265 @@
+.today-challenge {
+  padding-top: 120px !important;
+
+  .today-challenge-leader {
+    .logo-convention{
+      width: 161px;
+      position: absolute;
+      left: 60px;
+      top: 140px;
+    }
+    .date-time-picker {
+      width: 28%;
+      height: 70px !important;
+    }
+
+    .datetime-picker-wrapper {
+      width: 82%;
+      margin: 0 auto;
+    }
+
+    .input-group-addon {
+      width: 30px;
+    }
+    .glyphicon {
+      top: 8px;
+      right: 10px;
+    }
+    .glyphicon-calendar:before {
+      content: '\f0d7';
+      font-family: FontAwesome;
+    }
+    .date-time-picker .datetime-picker-wrapper .form-control[readonly] {
+      background: #fff;
+      color: #404142;
+      border-radius: 0;
+      height: 62px;
+      border-right: none;
+
+      .input-group-addon {
+        width: 60px;
+      }
+    }
+
+    .bootstrap-datetimepicker-widget {
+      width: 100% !important;
+      height: auto;
+      border-radius: 0;
+      background-image: linear-gradient(267deg, #2b2c2e, #2c2d2f);
+      margin: 0;
+      top: 60px !important;
+      left: 0 !important;
+
+      .accordion-toggle {
+        display: none;
+      }
+
+      .day {
+        opacity: .6;
+        font-size: 18px;
+
+        &.active {
+          background-size: 35px 35px;
+          opacity: 1;
+        }
+      }
+
+      thead {
+        tr &:first-child {
+          background-image: none;
+          background-color: rgba(155, 155, 155, .3);
+          height: 40px;
+
+          .picker-switch {
+            letter-spacing: 4px;
+            font-size: 21px;
+          }
+
+          .bt-glyphicon {
+            font-size: 20px;
+          }
+
+          .prev {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            .glyphicon {
+              @extend .bt-glyphicon;
+            }
+          }
+
+          .next {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            .glyphicon {
+              @extend .bt-glyphicon;
+            }
+          }
+        }
+
+        th {
+          &.dow {
+            color: white;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    div.title-today-challenge-leader {
+      height: 90px;
+      text-align: left;
+      padding-left: 25px;
+      display: flex;
+      align-items: center;
+      &.convention{
+        height: 110px;
+        padding-left: 245px;
+      }
+      .text {
+        text-align: center;
+        &.convention {
+          color: #f58220;
+          float: left;
+          width: 606px;
+          text-align: justify;
+          margin-bottom: 0;
+          span {
+            color: unset;
+            line-height: 87px;
+            letter-spacing: 1.8px;
+            font-size: 72px;
+            display: block;
+            padding-top: 11px;
+          }
+        }
+        span {
+          color: #dadada;
+          font-family: FontBold;
+          font-size: 48px;
+          justify-content: center;
+          text-transform: uppercase;
+          line-height: 1.2;
+        }
+      }
+      .challenge-date {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 70%;
+      }
+    }
+
+    .text-type {
+      font-size: 23px;
+      text-transform: uppercase;
+      line-height: 2.8;
+      letter-spacing: .6px;
+      text-align: center;
+      color: #f58220;
+      font-family: FontBold;
+      &.convention {
+        color: #4a4a4a;
+        font-family: FontBold;
+        font-weight: bold;
+        float: right;
+        font-size: 50px;
+        letter-spacing: 1.8px;
+        line-height: 87px;
+        display: inline-block;
+        padding-top: 10px;
+        span.challenge{
+          letter-spacing: 1.8px;
+          line-height: 87px;
+          font-size: 50px;
+        }
+      }
+      span.challenge {
+        @extend .text-type;
+        color: #4a4a4a;
+        font-weight: bold;
+        font-size: 23px;
+      }
+      .activity-type {
+        margin-left: 55px;
+
+        .switch {
+          margin-left: 10px;
+        }
+
+        .switch-label:before,
+        .switch-label:after {
+          margin-top: -.4em;
+          top: 58%;
+        }
+
+        .switch-label:before {
+          left: 45px;
+        }
+
+        .switch-label:after {
+          left: 10px;
+        }
+      }
+    }
+
+    .today-challenge-leader-tables {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+
+  div.table-content {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 65px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 2px #444c52;
+    height: 662px;
+  }
+
+  @media (max-width: 1300px) {
+    .today-challenge-leader {
+      padding-top: 30px !important;
+    }
+  }
+
+  .date-wapper {
+    position: relative;
+    margin: initial;
+    display: inline-block;
+    width: 100px;
+    bottom: 13px;
+
+    label {
+      margin-top: 25px;
+      font-style: normal;
+      font-weight: initial;
+    }
+
+    .date {
+      color: #f58220;
+      font-family: FontBold;
+      font-size: 30px;
+      font-style: normal;
+    }
+
+    .content-left {
+      height: 100px;
+    }
+
+    .content-right {
+      height: 100px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .today-challenge {
+    .date-wapper {
+      top: -13px !important;
+    }
+  }
+}

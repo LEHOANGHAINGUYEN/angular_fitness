@@ -1,0 +1,51 @@
+/**
+* Css for radio button with orange theme
+**/
+
+$White: #fff;
+$Orange: #f48120;
+$BorderColor: #a3a3a3;
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']+label span {
+  @include border-radius(50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: solid 1px $BorderColor;
+  background-color: #404142;
+  box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, .5), 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+input[type='radio']+label span:after {
+  @include border-radius(50%);
+  display: inline-block;
+  margin: 2px 0 0 2px;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: $White;
+}
+
+input[type='radio']:checked+label span:after {
+  background-color: $Orange;
+}
+
+input[type='radio']+label span:after,
+input[type='radio']:checked+label span:after {
+  @include transition(background-color .4s linear);
+}
+
+.radio-inline {
+  padding-left: 0;
+  padding-right: 20px;
+  opacity: .5;
+  &.checked {
+    opacity: 1;
+  }
+}

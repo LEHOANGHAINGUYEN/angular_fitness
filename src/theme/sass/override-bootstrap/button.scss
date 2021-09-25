@@ -1,0 +1,58 @@
+/**
+* Override css of bootrap in here
+**/
+
+.btn-theme {
+  color: #fff;
+  background-color: #f58220;
+  border-color: transparent;
+}
+
+// Override button them throught btn class
+.btn {
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #e4e6e7;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  color: #fff;
+}
+
+// Main btn theme
+.btn-primary {
+  border-radius: 5px;
+  background-color: #f58220;
+  box-shadow: 0 0 7.6px .4px rgba(60, 58, 56, .2);
+  border-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn-primary[disabled]:hover {
+  @extend .btn-theme;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  @extend .btn-theme;
+}
+
+.btn-primary:hover {
+  @extend .btn-theme;
+}
+
+.btn-primary:active {
+  @extend .btn-theme;
+}
+
+.btn-primary:active:focus {
+  @extend .btn-theme;
+}
+
+button:focus {
+  outline: 0 !important;
+}

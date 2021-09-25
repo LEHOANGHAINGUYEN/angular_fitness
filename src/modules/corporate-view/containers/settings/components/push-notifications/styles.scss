@@ -1,0 +1,155 @@
+.push-notification {
+  div.panel-filter-push {
+    height: 400px;
+    background-color: #ffffff;
+    border: solid 1px #e4e6e7;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    .table-push {
+      td.list-select {
+        padding-left: 70px;
+        padding-top: 20px;
+      }
+      div.search-text {
+        padding-right: 20px;
+        text-align: right;
+        margin-top: 6px;
+        box-sizing: border-box;
+        width: 260px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #fbfbfb;
+        border: solid 1px #dfe3e6;
+      }
+    }
+    div.list-radio {
+      width: 300px;
+      margin-left: -20px;
+      margin-top: 20px;
+    }
+    label {
+      margin-left: 13px;
+      color: #333333;
+      font-size: 20px;
+      font-weight: 900;
+      font-stretch: condensed;
+      line-height: 1.33;
+      margin-bottom: 15px;
+      letter-spacing: .4px;
+    }
+    .select-country {
+      width: 260px;
+    }
+    .select-individual {
+      width: 350px;
+    } // sass-lint:disable class-name-format
+    .Select-clear-zone {
+      display: none;
+    }
+    .Select-control {
+      height: 40px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px #dfe3e6;
+    }// sass-lint:disable class-name-format
+    .title-message {
+      height: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      font-stretch: condensed;
+      line-height: 1.33;
+      letter-spacing: .4px;
+      margin-left: 52px;
+      margin-top: 15px;
+      color: #333333;
+    }
+    div.mesage {
+      padding-right: 95px;
+      textarea {
+        width: 100%;
+        height: 200px;
+        margin-left: 50px;
+        box-sizing: border-box;
+        border: solid 1px #dfe3e6;
+        border-radius: 3px;
+        background-color: #ffffff;
+        font-size: 16px;
+        resize: none;
+      }
+    }
+    .text-highlight {
+      color: black;
+    }
+    label span {
+      margin-right: 8px;
+    }
+  }
+  .panel-send-email{
+    @extend .panel-filter-push;
+    height: unset !important;
+    padding-bottom: 30 !important;
+    .send-email-btn{
+      vertical-align: bottom;
+    }
+  }
+  .btn-bottom {
+    display: flex;
+    padding-right: 32px;
+    padding-top: 50px;
+    float: right;
+  }
+  .cancel-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    box-shadow: 0 0 7.6px .4px rgba(60, 58, 56, .2);
+    border: solid 2px #5a6064;
+    font-size: 19px;
+    color: #595f63;
+    text-align: center;
+    margin-right: 13px;
+  }
+  .send-btn {
+    @extend .cancel-btn;
+    background-color: #f58220;
+    color: #ffffff;
+    border: none;
+    margin-right: 0;
+  }
+  .date-time-picker {
+    height: auto;
+    display: inline-block;
+    .input-group {
+      height: 0;
+    }
+  }
+  .glyphicon-calendar {
+    position: relative;
+    top: 1px;
+  }
+  .bootstrap-datetimepicker-widget {
+    height: 370px;
+    top: -15px !important;
+    left: -150px !important;
+    border-radius: 0;
+    margin-right: auto;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  .input-group-addon{
+    width: 1px;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 0;
+    padding: 1px 10px;
+  }
+  .form-control{
+    font-size: 20px !important;
+    text-align: left !important;
+    height: 40px;
+  }
+}

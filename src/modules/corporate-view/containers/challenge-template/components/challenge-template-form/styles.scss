@@ -1,0 +1,44 @@
+.template-form-modal {
+  &.modal-dialog {
+    .modal-content {
+      height: 670px;
+      .modal-header {
+        .modal-title {
+          text-align: center;
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+      .modal-body {
+        .challenge-template {
+          .info-challenge-template {
+            .form-control {
+              &.form-sub-category {
+                display: inline-block;
+              }
+            }
+            .title {
+              margin-top: 20px;
+            }
+            .input-form {
+              .text-danger-tooltip{
+                height: 34px;
+                width: 100%;
+              }
+            }
+          }
+          .action-challenge {
+            text-align: center;
+            position: fixed;
+            bottom: 30px;
+            width: 100%;
+            left: 0;
+            .btn-primary {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.studio-menu {
+  &.dropdown-menu {
+    right: 0;
+    left: unset;
+    min-width: 290px;
+    font-size: 16px;
+    ul {
+      background-color: #f1f1f1;
+      list-style: none;
+      li {
+        padding: 5px 0;
+        a {
+          color: #333;
+          text-decoration: none;
+          padding-left: 5px;
+        }
+        .unit-measurements{
+          padding-left: 5px;
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+        }
+      }
+    }
+    .expanded {
+      .fa-angle-right::before {
+        content: '\f107';
+      }
+    }
+    .menu-child-item {
+      cursor: pointer;
+    }
+  }
+}

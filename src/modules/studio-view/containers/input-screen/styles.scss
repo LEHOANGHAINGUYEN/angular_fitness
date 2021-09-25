@@ -1,0 +1,142 @@
+.input-screen {
+  width: 100%;
+  padding-top: 5%;
+  .calendar-container {
+    padding-top: 30%;
+    text-align: center;
+    .bootstrap-datetimepicker-widget {
+      width: 95% !important;
+      height: auto;
+      border-radius: 0;
+      background-image: linear-gradient(267deg, #2b2c2e, #2c2d2f);
+      margin: 0;
+      display: inline-block;
+      .accordion-toggle {
+        display: none;
+      }
+      .day {
+        opacity: .6;
+        font-size: 18px;
+        &.active {
+          background-size: 35px 35px;
+          opacity: 1;
+        }
+      }
+      thead {
+        tr {
+          &:first-child {
+            background-image: none;
+            background-color: rgba(155, 155, 155, .3);
+            height: 40px;
+            .picker-switch {
+              letter-spacing: 4px;
+              font-size: 21px;
+            }
+            .bt-glyphicon {
+              font-size: 20px;
+            }
+            .prev {
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              .glyphicon {
+                @extend .bt-glyphicon;
+              }
+            }
+            .next {
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              .glyphicon {
+                @extend .bt-glyphicon;
+              }
+            }
+          }
+          th {
+            &.dow {
+              color: white;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .left-container {
+    .date-time-rect-container {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      .date-wapper {
+        margin: 0;
+        display: inline-block;
+        position: static;
+        width: 190px;
+        .content-left,
+        .content-right {
+          width: 50%;
+          height: 160px;
+          font-size: 40px;
+        }
+        .content {
+          width: 100%;
+          position: relative;
+          top: -130px;
+          .date-text {
+            font-style: normal;
+            color: #f58220;
+          }
+          label {
+            @extend .date-text;
+            font-size: 30px;
+            font-weight: initial;
+          }
+          .date {
+            @extend .date-text;
+            font-size: 50px;
+            font-family: FontBold;
+          }
+        }
+      }
+    }
+  }
+  .right-container {
+    .title {
+      text-align: center;
+      .select-time {
+        text-transform: uppercase;
+        color: #dadada;
+        letter-spacing: 3px;
+        font-size: 95px;
+        font-style: normal;
+        span {
+          font-family: FontBold !important;
+        }
+      }
+    }
+  }
+}
+
+.time-input {
+  width: 100%;
+  margin: 0 auto;
+  .td-time {
+    width: 400px;
+    height: 96px;
+    padding-left: 16px;
+    padding-right: 6px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .input-screen {
+    .bootstrap-datetimepicker-widget {
+      width: 100% !important;
+    }
+    .right-container {
+      .title {
+        .select-time {
+          font-size: 60px !important;
+        }
+      }
+    }
+  }
+}

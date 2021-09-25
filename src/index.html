@@ -1,0 +1,18 @@
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <% if (webpackConfig.htmlElements.headTags) { %>
+      <!-- Configured Head Tags  -->
+      <%= webpackConfig.htmlElements.headTags %>
+        <% } %>
+  </head>
+  
+  <body>
+    <div id="root"></div>
+  </body>
+  
+  </html>

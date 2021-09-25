@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+.idea/
+build/
+.vscode/chrome
+__MACOSX/
+package-lock.json
+/src/common/config/env/local.json
+newrelic_agent.log

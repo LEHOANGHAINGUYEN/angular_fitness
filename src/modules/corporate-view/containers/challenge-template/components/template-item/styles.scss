@@ -1,0 +1,122 @@
+.template-item {
+  .thumbnail {
+    padding: 0;
+    .close {
+      position: absolute;
+      top: 3%;
+      right: 22px;
+      font-size: 28px;
+      color: white;
+    }
+    button {
+      &.template-item-header-inactive {
+        cursor: default;
+      }
+    }
+  }
+
+  .template-item-header {
+    height: 124px;
+    width: 100%;
+    background-color: #434b51;
+    border: none;
+    .template-item-name {
+      display: flex;
+      align-items: center;
+      padding-right: 25px;
+      font-size: 21px;
+      text-align: left;
+      color: #ffffff;
+      height: 100%;
+      font-weight: bold;
+      span {
+        margin-left: 11px;
+       }
+      .close {
+        font-size: 40px;
+        position: relative;
+        bottom: 32%;
+        left: 98%;
+        color: floralwhite;
+        opacity: .8;
+      }
+    }
+
+    .template-item-icon {
+      float: left;
+      width: 122px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+      }
+      &.dritri-sprint {
+        height: 70%;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .template-item-body {
+    padding: 10px;
+    color: #555555;
+    border: 1px solid #e4e6e7;
+
+    label {
+      color: #333333;
+    }
+
+    .template-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  .template-action {
+    padding: 10px 30px 10px 10px;
+    text-align: right;
+
+    .btn-template-action {
+      height: 30px;
+      width: 80px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+
+  .active {
+    .template-item-header {
+      background-color: #f58220;
+    }
+  }
+}
+
+.template-item:hover {
+  .template-item-header {
+    background-color: #f58220;
+  }
+}
+
+.delete-confirmation {
+  .modal-header {
+    display: none;
+  }
+
+  .modal-body {
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .modal-footer {
+    text-align: center;
+
+    .btn {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+}

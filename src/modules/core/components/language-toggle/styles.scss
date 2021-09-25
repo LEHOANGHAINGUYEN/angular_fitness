@@ -1,0 +1,49 @@
+.language-toggle {
+  margin: 180px 0;
+  .language-option {
+    display: inline-block;
+    width: 150px;
+    color: #fff;
+    font-size: 25px;
+    margin: 0 70px;
+    & img {
+      @include transition(all .3s ease-out);
+      width: 150px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      &.en-lang {
+        content: url('./images/language_toggle_english.svg');
+      }
+      &.fr-lang {
+        content: url('./images/language_toggle_french.svg');
+      }
+      &.es-lang {
+        content: url('./images/language_toggle_spanish.svg');
+      }
+      &:hover {
+        @include transform(scale(1.1));
+      }
+    }
+  }
+  &.setting-theme {
+    .language-option {
+      position: relative;
+      color: #898989;
+      &.selected {
+        color: #39393a;
+        &::after {
+          content: '';
+          bottom: -10px;
+          left: 0;
+          right: 0;
+          position: absolute;
+          height: 6px;
+          width: 70%;
+          background-color: #f58220;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

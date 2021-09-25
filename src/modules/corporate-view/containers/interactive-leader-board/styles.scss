@@ -1,0 +1,74 @@
+.corporate-interactive {
+  .corporate-interactive-leader-board {
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 20px;
+    .interactive-leader-board-content {
+      padding: 0 27px;
+      .react-bs-table-pagination {
+        .col-md-6.col-xs-6.col-sm-6.col-lg-6 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+    }
+    .rank-icon {
+      float: right;
+      width: 18px;
+    }
+    .time {
+      width: 62px;
+      height: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: condensed;
+      line-height: 1.2;
+      text-align: center;
+      color: #333333;
+      margin-left: 20;
+    }
+    .time-icon {
+      width: 19px;
+    }
+    .text-time {
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: condensed;
+      line-height: 1.71;
+      text-align: center;
+      color: #555555;
+      position: relative;
+      top: 5px;
+      text-transform: uppercase;
+    }
+    .border-separation {
+      border-right-style: solid;
+      border-right-width: thin;
+      border-right-color: #e7e7e7;
+    }
+    .react-bs-table {
+      padding: 20px;
+      background-color: #444c52;
+      border-radius: inherit;
+    }
+    img {
+      margin-right: 12px;
+    }
+    .rank {
+      padding-top: 0;
+      &:after {
+        font-size: 135px;
+        left: 244px;
+      }
+    }
+    .rank-1,
+    .rank-2,
+    .rank-3,
+    .rank-other {
+      @extend .rank;
+    }
+    h3 {
+      padding-bottom: 20px;
+    }
+  }
+}

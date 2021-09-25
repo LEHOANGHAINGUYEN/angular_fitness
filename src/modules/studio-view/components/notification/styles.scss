@@ -1,0 +1,81 @@
+.notification-header-wrapper {
+  img.notification-icon {
+    width: 28px;
+  }
+  .badge-orange {
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    background-color: #f4821f;
+    color: #ffffff;
+  }
+  .dropdown-menu {
+    left: -26px;
+    top: 150%;
+    border-radius: 0;
+    width: 350px;
+    padding: 0 0 20px 0;
+    .dropdown-title {
+      font-family: FontBold;
+      height: 90px;
+      font-size: 23px;
+      display: flex;
+      color: #4a4a4a;
+      font-style: italic;
+      text-transform: uppercase;
+      justify-content: center;
+      align-items: center;
+    }
+    .notification-content {
+      .notification-item {
+        height: 90px;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+        background-color: #f7f7f7;
+        color: #4a4a4a;
+        cursor: pointer;
+        padding-left: 6px;
+        &.read {
+          border-left: 6px solid #f58220;
+          padding-left: 0;
+        }
+        .avatar {
+          float: left;
+          height: 100%;
+          .profile-icon {
+            width: 45px;
+            margin: 14px 8px 0 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+            border: 2px solid #eee;
+          }
+        }
+        .content {
+          float: left;
+          width: 80%;
+          padding: 10px;
+          .username {
+            font-family: FontBold;
+          }
+          .pretty-time {
+            color: #9c9c9c;
+          }
+          .message {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-menu:before {
+    bottom: 100%;
+    left: 9%;
+    border: solid transparent;
+    content: ' ';
+    position: absolute;
+  }
+  .dropdown-menu:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.list-sub-challenges {
+  width: 163px;
+  float: right;
+  position: absolute;
+  top: 35px;
+  right: 60px;
+  .sub-challenge{
+    width: 100%;
+    .challenge-des{
+      line-height: 2.5;
+    }
+  }
+}

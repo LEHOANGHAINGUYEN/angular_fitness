@@ -1,0 +1,16 @@
+.switch-container {
+  .switch-button {
+    border-radius: 15px;
+    border: none;
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #5d5e5f;
+    background-color: transparent;
+    &.active {
+      background-color: #f58220;
+      color: #fff;
+    }
+  }
+}

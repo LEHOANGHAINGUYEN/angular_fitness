@@ -1,0 +1,35 @@
+.type-metric-switch {
+  position: relative;
+  height: 90px;
+  border-top: solid 1px #f0f0f0;
+  border-right: solid 1px #f0f0f0;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+  background: white;
+  img {
+    width: 55px;
+  }
+  .name {
+    padding-left: 25px;
+  }
+  &.selected {
+    background: linear-gradient(180deg, #2c2c2e 0%, #18191b 100%);
+    color: #fff;
+    border-right: none;
+    border-top: solid 1px #4a4a4a;
+    &:after {
+      content: '';
+      position: absolute;
+      right: -1;
+      border: solid transparent;
+      border-right-color: #fff;
+      border-width: 20px;
+    }
+  }
+}

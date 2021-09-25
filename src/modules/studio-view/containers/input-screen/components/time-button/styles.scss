@@ -1,0 +1,35 @@
+.time-button {
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-size: 35px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 15px;
+  font-style: italic;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .15);
+  .time {
+    font-family: FontRegular;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .name {
+    color: #f58220;
+    font-size: 25px;
+    font-weight: initial;
+    text-transform: uppercase;
+  }
+  &:hover {
+    box-shadow: 0 0 0 5px #f48120 inset;
+  }
+}
+
+@media (max-width: 1200px) {
+  .time-button {
+    font-size: 25px;
+    .name {
+      font-size: 20px;
+    }
+  }
+}

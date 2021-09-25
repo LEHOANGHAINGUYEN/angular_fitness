@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="41px" viewBox="0 0 43 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Class-Roster" transform="translate(-153.000000, -46.000000)" fill="#FFFFFF">
+            <g id="header">
+                <g id="back-button" transform="translate(1.000000, 1.000000)">
+                    <g id="Group-6" transform="translate(152.000000, 45.000000)">
+                        <g id="Group-5" transform="translate(21.867188, 12.056974) rotate(-270.000000) translate(-21.867188, -12.056974) translate(9.867188, -9.455221)">
+                            <polygon id="Rectangle-2" points="0.47918472 21.9226002 20.4842665 0.916354876 23.9334186 4.53812132 3.92833676 25.5443667"></polygon>
+                            <polygon id="Rectangle-2" points="3.92833676 17.9055063 23.9334186 38.9117517 20.4842665 42.5335181 0.47918472 21.5272727"></polygon>
+                        </g>
+                        <rect id="Rectangle-3" x="9" y="15.3902439" width="8" height="25.6097561"></rect>
+                        <rect id="Rectangle-3" x="26" y="15" width="8" height="25.6097561"></rect>
+                        <rect id="Rectangle-3" x="12.765625" y="15" width="20.234375" height="13.5541635"></rect>
+                        <polygon id="Path-2" points="23.1816406 5.75057165 32.8398438 15.8404154 30.4853516 17.8201696 12.6054688 17.8201696 12.6054688 14.1117569 22.7226562 4.2660061"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

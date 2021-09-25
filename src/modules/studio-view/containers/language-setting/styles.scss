@@ -1,0 +1,68 @@
+.language-setting-wrapper {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(315.23deg, #19171f 0%, #2d2a37 100%);
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .28);
+  p {
+    margin: 0 0 45px;
+  }
+  .label-page {
+    color: #ffffff;
+    font-family: FontBold;
+    font-size: 48px;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: .92px;
+    padding-top: 15%;
+  }
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    .form-select {
+      width: 19.5%;
+      height: 70.4px;
+      .select--single {
+        &.is-open {
+          .select-control {
+            .select-arrow-zone {
+              .select-arrow {
+                border-width: 0 9px 9px;
+              }
+            }
+          }
+        }
+        .select-control {
+          height: 60px;
+          .select-value {
+            line-height: 60px;
+            font-family: 'Source Sans Pr';
+            text-align: left;
+            padding-left: 6%;
+            .select-value-label {
+              color: #777777;
+              text-transform: capitalize;
+              font-size: 24px;
+              font-weight: 600;
+            }
+          }
+          .select-arrow-zone {
+            .select-arrow {
+              border-width: 9px 9px 2.5px;
+            }
+          }
+        }
+        .select-menu-outer {
+          .select-menu {
+            .select-option {
+              text-align: left;
+              text-transform: capitalize;
+              padding-left: 6%;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

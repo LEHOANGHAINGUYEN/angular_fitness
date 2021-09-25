@@ -1,0 +1,71 @@
+.wrapper-poster {
+  height: 300px;
+  background: url('./images/image-FCOD.png') no-repeat center;
+  margin-top: 55;
+  width: 98%;
+  background-size: cover;
+  .header {
+    width: 64%;
+    height: 65px;
+    background: url('./images/fc-of-day-bg.png') no-repeat;
+    margin-left: 1%;
+    position: relative;
+    top: 5%;
+    .title {
+      height: 14px;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 3.43;
+      letter-spacing: .4px;
+      text-align: left;
+      color: #fefefe;
+      left: 10px;
+      position: relative;
+    }
+    .date {
+      width: 50%;
+      font-size: 15px;
+      line-height: 1.5;
+      letter-spacing: .3px;
+      text-align: left;
+      color: #fefefe;
+      position: relative;
+      right: -11px;
+    }
+  }
+  .type {
+    position: relative;
+    left: 7px;
+    width: 45%;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: .69;
+    letter-spacing: .5px;
+    color: #ffffff;
+    margin-top: 200px;
+  }
+  .select-studio {
+    width: 37%;
+    float: right;
+    position: relative;
+    bottom: 45px;
+    right: 24px;
+    opacity: .7;
+    border-radius: 3px;
+    background-color: #434b51;
+  }
+  // sass-lint:disable class-name-format
+  .Select-control {
+    background-color: unset;
+  }
+  .Select-placeholder {
+    color: white;
+  }
+  .Select-input {
+    color: white;
+  }
+  .has-value.Select--single>.Select-control .Select-value .Select-value-label,
+  .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+    color: white;
+  }
+}

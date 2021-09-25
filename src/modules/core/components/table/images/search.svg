@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>search icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Member-Search" transform="translate(-632.000000, -551.000000)">
+            <g id="Group-3" transform="translate(607.000000, 532.000000)">
+                <g id="studio-password">
+                    <g id="search-icon" transform="translate(26.000000, 20.000000)">
+                        <circle id="Oval-6" stroke="#4A4A4A" stroke-width="2" cx="7.5" cy="7.5" r="7.5"></circle>
+                        <rect id="Rectangle-21" fill="#4A4A4A" transform="translate(15.548461, 16.381957) rotate(-315.000000) translate(-15.548461, -16.381957) " x="10.5495107" y="15.3819567" width="9.9978998" height="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

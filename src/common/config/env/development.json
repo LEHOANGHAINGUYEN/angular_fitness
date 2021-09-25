@@ -1,0 +1,13 @@
+{
+  "UnauthorizeEndpoint": "https://api.dev.orangetheoryfitness.net/proxy/no-auth/api",
+  "AuthorizeEndpoint": "https://api.dev.orangetheoryfitness.net/proxy/api",
+  "OTumFranchiseEndpoint": "https://api.dev.orangetheoryfitness.net/franchise",
+  "AuthorizeGlobalEndpoint": "https://api.dev.orangetheoryfitness.net/fca-core/api",
+  "EdenMboEndpoint": "https://api.dev.orangetheoryfitness.net/occi/mbo",
+  "PageSize": 50,
+  "cognito": {
+    "IDENTITY_POOL_ID": "us-east-1:5c6c03d1-0ca3-4c9d-bc6e-a215144194b0",
+    "USER_POOL_ID": "us-east-1_cyAHv1hnW",
+    "APP_CLIENT_ID": "18j6gihukres7db1n680o10p4a"
+  }
+}

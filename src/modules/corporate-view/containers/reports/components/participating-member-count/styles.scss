@@ -1,0 +1,80 @@
+.participating-member-count {
+  .member-count {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  .member-count-participating {
+    width: 50%;
+  }
+  .percentage-members-participating {
+    width: 48.5%;
+    background-color: #ffffff;
+    height: 507px;
+    border: solid 1px #e4e6e7;
+    margin-left: 8px;
+    .title-percentage {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: .86;
+      letter-spacing: .6px;
+      text-align: left;
+      color: #111111;
+      margin-top: 17px;
+      margin-left: 25px;
+    }
+  }
+  .chart-wrapper {
+    display: flex;
+    margin-top: 80px;
+  }
+  .chart-percentage {
+    width: 220px;
+    background-color: #fff;
+    margin-left: 30;
+  }
+  .percent {
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: condensed;
+    line-height: .41;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #333333;
+    position: relative;
+    bottom: 120px;
+  }
+  .chart-name {
+    font-size: 13.4px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: .4px;
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+  }
+  .chart-info {
+    float: right;
+    margin-top: 70px;
+    margin-left: 40px;
+  }
+  .chart-category {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: .5px;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 30px;
+    .ellipse {
+      font-size: 12px;
+    }
+  }
+  .chart-number {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: .71;
+    letter-spacing: .7px;
+    color: #f58220;
+  }
+}

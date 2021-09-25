@@ -1,0 +1,13 @@
+.home-button {
+  width: 85px;
+  height: 100%;
+  float: left;
+  background: linear-gradient(267deg, #2b2c2e, #2c2d2f);
+  text-align: center;
+  box-shadow: inset -5px 0 5px -5px #000;
+  cursor: pointer;
+  img {
+    margin-top: 31px;
+    width: 33px;
+  }
+}

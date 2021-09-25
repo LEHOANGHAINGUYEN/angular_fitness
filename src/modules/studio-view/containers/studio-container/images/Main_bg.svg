@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1079px" viewBox="0 0 1920 1079" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1920" height="1079.37046"></rect>
+        <linearGradient x1="43.0541667%" y1="-25.644319%" x2="22.1729167%" y2="89.6845279%" id="linearGradient-3">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.9992011%" y1="-25.9559687%" x2="18.1771936%" y2="86.5584096%" id="linearGradient-4">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Coach's-Hub-Screen" transform="translate(0.000000, -1.000000)">
+            <g id="bg" transform="translate(0.000000, 1.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="1919" height="1078.37046"></rect>
+                </g>
+                <path d="M-26.0762401,-244.907967 C83.4814495,-423.115435 631.658576,-414.640393 1618.45514,-219.482842 L1618.45514,-56.9454665 C1545.62559,43.6653501 1488.84693,182.45072 1438.19723,321.935992 C1309.58841,676.114483 1020.63963,2178.71676 561.592242,2001.01209 C102.544852,1823.30741 -190.412775,22.4032334 -26.0762401,-244.907967 Z" fill="url(#linearGradient-3)" opacity="0.0500000007" mask="url(#mask-2)"></path>
+                <path d="M-266.065208,-489.223391 C-138.524272,-654.975398 405.766108,-589.109958 1366.80593,-291.62707 L1349.85659,-129.980092 C1266.93435,-37.5513557 1195.99424,94.524587 1131.07652,227.938777 C966.238619,566.701684 522.181879,2030.79712 84.1801819,1805.96792 C-353.821515,1581.13873 -457.376611,-240.595379 -266.065208,-489.223391 Z" fill="url(#linearGradient-4)" opacity="0.0500000007" mask="url(#mask-2)"></path>
+                <path d="M-721.50987,-489.223391 C-593.968934,-654.975398 -49.6785544,-589.109958 911.36127,-291.62707 L894.411928,-129.980092 C811.489685,-37.5513557 740.549576,94.524587 675.631857,227.938777 C510.793957,566.701684 66.737217,2030.79712 -371.26448,1805.96792 C-809.266177,1581.13873 -912.821273,-240.595379 -721.50987,-489.223391 Z" fill="url(#linearGradient-4)" opacity="0.0500000007" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

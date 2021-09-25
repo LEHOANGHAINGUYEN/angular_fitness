@@ -1,0 +1,71 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  - master
+  - uat
+  - sit
+  - develop
+
+pool:
+    vmImage: 'ubuntu-latest'
+steps:
+  - task: NodeTool@0
+    displayName: 'Use Node 8.x'
+    inputs:
+      versionSpec: 8.x
+  
+  - task: Npm@1
+    displayName: 'npm install'
+    inputs:
+      verbose: false
+  
+  - bash: |
+     export NEW_RELIC_LICENSE_KEY=$(newrelic.license.key)
+  - task: WhiteSource Bolt@20
+    displayName: 'WhiteSource Bolt'
+  
+  - task: Npm@1
+    displayName: 'Build DEV'
+    condition: eq(variables['Build.SourceBranchName'], 'develop')
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: 'run build:dev'
+      
+  - task: Npm@1
+    displayName: 'Build SIT'
+    condition: eq(variables['Build.SourceBranchName'], 'sit')
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: 'run build:sit'
+  
+  - task: Npm@1
+    displayName: 'Build UAT'
+    condition: eq(variables['Build.SourceBranchName'], 'uat')
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: 'run build:uat'
+  
+  - task: Npm@1
+    displayName: 'Build PROD'
+    condition: eq(variables['Build.SourceBranchName'], 'master')
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: 'run build:prod'
+  
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+    inputs:
+      SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+  
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: release'
+    inputs:
+      ArtifactName: release

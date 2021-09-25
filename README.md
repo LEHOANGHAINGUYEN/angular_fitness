@@ -1,1 +1,1 @@
-# angular_fitness_challenge
+# Fitness Challenge Application

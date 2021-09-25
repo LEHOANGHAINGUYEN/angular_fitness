@@ -1,0 +1,107 @@
+.left-menu-wrapper {
+  position: fixed;
+  width: 100px;
+  float: left;
+  height: 100vh;
+  background-color: #434b51;
+  padding-top: 31px;
+  .side-bar {
+    list-style: none;
+    padding: 0; // Css for side bar item
+    .side-bar-item {
+      position: relative;
+      a {
+        height: 100px;
+        display: block;
+        padding-top: 60%;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-align: center;
+        color: #6f7a83;
+        font-size: 13px;
+        border-bottom: 1px solid #4e565c;
+        i {
+          position: absolute;
+          top: 20%;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .studio-management {
+          top: 17%;
+          width: 24px;
+          height: 32px;
+          background: url(./images/studio-management.png);
+        }
+        .coaches {
+          width: 27px;
+          height: 31px;
+          background: url(./images/coach-hub.png);
+        }
+        .challenges {
+          width: 31px;
+          height: 32px;
+          background: url(./images/challenges.png);
+        }
+        .reports {
+          width: 24px;
+          height: 33px;
+          background: url(./images/reports.png);
+        }
+        .leader-board {
+          width: 28px;
+          height: 37px;
+          background: url(./images/leader-board-menu.png);
+        }
+        .member-management {
+          top: 17%;
+          width: 24px;
+          height: 32px;
+          background: url(./images/member-management.png);
+        }
+        .push-notifications {
+          width: 33px;
+          height: 32px;
+          background: url(./images/push-notifications-inactive.svg) no-repeat;
+        }
+      } // Active link css
+      a.active {
+        background-color: #353e44;
+        color: #ffffff;
+        .studio-management {
+          background: url(./images/studio-management-active.png);
+        }
+        .coaches {
+          background: url(./images/coach-hub-active.png);
+        }
+        .challenges {
+          background: url(./images/challenges-active.png);
+        }
+        .reports {
+          background: url(./images/reports-active.png);
+        }
+        .leader-board {
+          background: url(./images/leader-board-menu-active.png);
+        }
+        .member-management {
+          background: url(./images/member-management-active.png);
+        }
+        .push-notifications {
+          background: url(./images/push-notifications-active.svg) no-repeat;
+        }
+      }
+      a:hover,
+      a:visited,
+      a:focus {
+        text-decoration: none;
+      } // Css for member-management
+      .link-member-management {
+        padding-top: 52px !important;
+      }
+      .link-studio-management {
+        padding-top: 52px !important;
+      }
+    }
+  }
+}

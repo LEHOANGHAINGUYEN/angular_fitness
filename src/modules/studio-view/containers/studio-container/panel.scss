@@ -1,0 +1,103 @@
+.separate-container {
+  display: flex;
+  min-height: 91.7%;
+  .left-container {
+    padding: 12px 0 0 0;
+    background-image: linear-gradient(267deg, #2b2c2e, #2c2d2f);
+    transition: .3s;
+    .tag-div {
+      position: relative;
+      .toggle {
+        position: absolute;
+        right: -15px;
+        top: 30px;
+        z-index: 80;
+        cursor: pointer;
+        .btn-icon {
+          border-radius: 50%;
+          border: none;
+          height: 32px;
+          width: 32px;
+          box-shadow: rgba(9, 30, 66, .08) 0 0 0 1px, rgba(9, 30, 66, .08) 0 2px 4px 1px;
+          &:hover {
+            background-color: #f58228;
+            color: white;
+          }
+        }
+        .glyphicon {
+          right: 9px;
+          position: absolute;
+          line-height: 31px;
+          display: block;
+        }
+      }
+    }
+    .wrapper {
+      min-height: 83.5%;
+    }
+    &.hiden-left-container {
+      width: 35px;
+      .wrapper {
+        overflow: hidden;
+        padding-right: 30px;
+        .title-personal-breaker,
+        .date-time-rect-container,
+        .border-bottom,
+        .text-type,
+        .icon-equipment,
+        .title-global-leaderboard,
+        .text-title-global-leaderboard,
+        .date-time-rect-container,
+        .calendar-container,
+        .member-area,
+        .metric-switch-area {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .right-container {
+    padding-top: 5%;
+    min-height: 91%;
+    float: right;
+    transition: .3s;
+    .title {
+      text-align: center;
+    }
+    &.hiden-right-container {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .separate-container {
+    .left-container {
+      width: 33.33%;
+      height: 100vh;
+      .tag-div {
+        .toggle {
+          top: 37px;
+        }
+      }
+    }
+    .right-container {
+      width: 66.66%;
+      min-height: 100%;
+      &.hiden-right-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1550px) {
+  .separate-container {
+    .left-container {
+      .wrapper {
+        min-height: 81.6%;
+      }
+    }
+  }
+}

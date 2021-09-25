@@ -1,0 +1,63 @@
+.group-challenge-filter {
+  &.hidden-filter {
+    display: none;
+  }
+  .challenge-filter {
+    height: 120px;
+    background-color: #ffffff;
+    border: solid 1px #e4e6e7;
+    margin: 30px 40px 30px 40px !important;
+    padding-top: 22px;
+    border-top: 2px solid #f48120;
+    .col-md-2 {
+      .btn-secondary {
+        margin-top: 37px;
+        height: 36px;
+        width: 100px;
+        background-color: #f48120;
+        border-radius: 5px;
+        color: white;
+        font-size: 17px;
+      }
+    }
+    .division {
+      margin-left: 15px;
+    }
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      font-stretch: condensed;
+      line-height: 1.94;
+      text-align: left;
+      color: #333333;
+    }
+    // Override css of date-time-picker to make suitable for this component
+    .date-time-picker {
+      width: 100%;
+      .form-control {
+        height: 35px;
+        font-size: 14px !important;
+        text-align: left;
+      }
+    }
+
+    .input-group {
+      height: 0;
+      width: 100%;
+    }
+
+    .input-group-addon {
+      width: 1px;
+      font-size: 16px;
+      text-align: center;
+      padding-bottom: 0;
+      padding: 1px 10px;
+    }
+
+    .bootstrap-datetimepicker-widget {
+      top: 30px !important;
+      left: auto !important;
+      right: -50px !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="40px" viewBox="0 0 39 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>notifications</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Coach's-Hub-Screen" transform="translate(-1348.000000, -46.000000)" fill="#FFFFFF">
+            <g id="header">
+                <g id="notifications" transform="translate(1348.000000, 46.000000)">
+                    <rect id="Rectangle-23" x="6" y="4" width="28" height="28" rx="8"></rect>
+                    <rect id="Rectangle-24" x="0" y="25" width="39" height="7" rx="3.5"></rect>
+                    <path d="M20,5.58282804e-16 L20,5.58282804e-16 L20,8.8817842e-16 C22.209139,1.22550353e-14 24,1.790861 24,4 L24,4 L24,4 C24,6.209139 22.209139,8 20,8 L20,8 L20,8 C17.790861,8 16,6.209139 16,4 L16,4 L16,4 C16,1.790861 17.790861,8.49906083e-16 20,4.4408921e-16 Z" id="Rectangle-25"></path>
+                    <path d="M20,40 C23.3137085,40 26,37.3614238 26,34.1065752 C25.9607264,33.9472935 14.0101351,33.9827585 14,34.1065752 C14,37.3614238 16.6862915,40 20,40 Z" id="Oval-7"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

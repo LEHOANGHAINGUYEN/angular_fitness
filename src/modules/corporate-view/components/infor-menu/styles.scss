@@ -1,0 +1,115 @@
+.menu {
+  @include background-clip(padding-box);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.open>.menu {
+  display: block;
+}
+
+.infor-menu {
+  min-width: 232px;
+  height: 100%;
+  float: right;
+  .infor-wrapper {
+    padding-top: 14px;
+    .user-info-wrapper {
+      position: relative; // Profile dropdown menu
+      .profile-dropdown {
+        min-width: 220px;
+        left: -60px;
+        padding-bottom: 30px; // Profile info on top menu
+        .profile-info {
+          padding-bottom: 15px;
+          padding-top: 5px;
+          border-bottom: 1px solid #dfe3e6;
+          .profile-image {
+            padding-top: 0;
+            padding-left: 30px;
+            img {
+              width: 50px;
+            }
+          }
+          .profile-details {
+            text-align: left;
+            h4 {
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+            span {
+              color: #555555;
+            }
+          }
+        }
+        li .menu-item {
+          height: 40px;
+          line-height: 40px;
+          cursor: pointer;
+        }
+        .my-account a {
+          background: url(./images/my-account.svg) no-repeat left;
+          background-size: 10px;
+          margin-left: 18px;
+          padding: 2px 20px;
+        }
+        .permission a {
+          background: url(./images/permission.svg) no-repeat left;
+          background-size: 10px;
+          margin-left: 18px;
+          padding: 2px 20px;
+        }
+        .settings a {
+          background: url(./images/settings.svg) no-repeat left;
+          background-size: 14px;
+          margin-left: 16px;
+          padding: 2px 22px;
+        }
+        .log-out {
+          background: url(./images/log-out.svg) no-repeat left;
+          background-size: 14px;
+          margin-left: 18px;
+          padding: 0 21px;
+        }
+      }
+      a.menu-item {
+        color: #434b51;
+      }
+      a.user-link {
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: condensed;
+        line-height: .9;
+        letter-spacing: .4px;
+        text-align: left;
+        color: #434b51;
+      }
+      a:hover,
+      a:active,
+      a:focus {
+        text-decoration: none !important;
+      }
+      img.profile-icon {
+        width: 42px;
+        margin-right: 9px;
+      }
+      .left-10 {
+        margin-left: 10px;
+      }
+    }
+  }
+}

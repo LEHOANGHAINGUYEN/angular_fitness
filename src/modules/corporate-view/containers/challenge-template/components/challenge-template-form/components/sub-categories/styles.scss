@@ -1,0 +1,42 @@
+.template-sub-category {
+  .column-sub-category {
+    margin-bottom: 3px;
+    .form-control {
+      width: 90%;
+    }
+    .btn-add-sub-category {
+      margin-left: 10px;
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      padding: 0;
+      i {
+        font-size: 14px;
+      }
+    }
+    .btn-add-sub-category[disabled] {
+      opacity: .65;
+    }
+  }
+  .list-sub-category {
+    height: 136px;
+    width: 90%;
+    overflow-y: auto;
+    .sub-category {
+      border-radius: 1px;
+      background-color: #f7f7f7;
+      border: solid 1px #dfe3e6;
+      height: 30px;
+      padding: 3px 10px;
+      margin-bottom: 4px;
+    }
+    .btn-delete-sub-category {
+      float: right;
+      border: none;
+      background: transparent;
+      font-size: 12px;
+      padding-top: 6px;
+      color: #b5b5b5;
+    }
+  }
+}

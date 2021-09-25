@@ -1,0 +1,38 @@
+.leader-board-container {
+  p {
+    margin-bottom: unset;
+  }
+  .record-column {
+    font-size: 20;
+    color: #f06f1a;
+    font-weight: bold;
+  }
+  .studio-column {
+    @extend .record-column;
+    color: #39393a;
+  }
+  .uom{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .text-class {
+    text-align: center;
+    span {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: FontBold;
+      color: #39393a;
+    }
+  }
+  .average-result-container {
+    color: #393939;
+    text-transform: uppercase;
+    font-family: FontBold;
+    font-size: 35px;
+    text-align: center;
+    height: 55px;
+    margin-top: -32px;
+  }
+}

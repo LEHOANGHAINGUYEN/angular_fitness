@@ -1,0 +1,204 @@
+.personal-record-breaker-wapper {
+  .personal-record-breaker {
+    align-items: center;
+    vertical-align: middle;
+  }
+  h3 {
+    padding-bottom: 20px;
+  }
+  img {
+    margin-right: 12px;
+  }
+  .clock {
+    width: 22px;
+    height: 17px;
+  }
+  .time {
+    width: 62px;
+    height: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: condensed;
+    line-height: 1.2;
+    text-align: center;
+    color: #333333;
+    margin-left: 20;
+  }
+  .text-time {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: condensed;
+    line-height: 1.71;
+    text-align: center;
+    color: #555555;
+    position: relative;
+    top: 5px;
+    text-transform: uppercase;
+  }
+  .border-separation {
+    border-right-style: solid;
+    border-right-width: thin;
+    border-right-color: #e7e7e7;
+    margin-bottom: unset;
+  }
+  .dif-time {
+    color: #f48120;
+  }
+  .table-container {
+    padding: 0;
+    height: 34px;
+  }
+  .search-box {
+    width: 24%;
+    height: 40px;
+    float: right;
+    right: 37px;
+    .table-search-input {
+      background: #545c62 url('./images/search.svg') no-repeat scroll 10px;
+      background-size: 14px;
+      border: none;
+    }
+  }
+  .panel-filter {
+    background-color: #444c52;
+    border: solid 1px #ced3d6;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-bottom: 20px;
+    margin-left: 34px;
+    margin-right: 30px;
+    margin-top: -34px;
+  }
+  .bootstrap-table {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 110px;
+  }
+  .line-horizontal {
+    // sass-lint:disable no-vendor-prefixes
+    -webkit-min-logical-width: -webkit-fill-available;
+    margin-right: 167px;
+    margin-left: 70px;
+    height: 1px;
+    background-color: #586065;
+    margin-top: 107px;
+    position: absolute;
+  }
+  .react-bs-table-pagination {
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    .col-md-6.col-xs-6.col-sm-6.col-lg-6 {
+      margin-left: -32px;
+    }
+    .row {
+      margin-top: 5px !important;
+    }
+  }
+  .col-md-9 {
+    position: relative;
+    top: 51px;
+    width: 100%;
+  }
+  .col-date {
+    position: relative;
+    left: 23%;
+  }
+  .col-studio {
+    @extend .col-date;
+    left: 23%;
+  }
+  label {
+    height: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: condensed;
+    line-height: 1.94;
+    margin-top: -30px;
+    position: absolute;
+    color: #ffffff;
+    &.division{
+      padding-left: 15px;
+    }
+  }
+  .title-challenge {
+    @extend label;
+    font-size: 24px;
+    margin-top: 48px;
+    padding-left: 55px;
+    line-height: 1;
+    letter-spacing: .5px;
+    width: 100%;
+  } // Override css bootstrap date picker
+  .date-time-picker {
+    width: 100%;
+    height: inherit;
+  }
+  .input-group {
+    height: 0;
+    width: 100%;
+  }
+  .form-control {
+    height: 40px;
+    font-size: 15px !important;
+    text-align: left;
+    border: #545c62;
+  }
+  .input-group-addon {
+    width: 1px;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 0;
+    padding: 1px 10px;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left: 1px solid #646b70;
+    background: #545c62;
+  }
+  .bootstrap-datetimepicker-widget {
+    top: 44px !important;
+    left: 0 !important;
+  }
+  .date-time-picker .datetime-picker-wrapper .form-control[readonly] {
+    background: #545c62;
+    color: #ced3d6;
+  }
+  .glyphicon {
+    background-color: #ced3d6;
+    border-left: 1px solid #ced3f3;
+    border-top: 1px solid #ced3f3;
+  }
+  // Override css react select
+  // sass-lint:disable class-name-format
+  .Select-control {
+    height: 40px;
+    background: #545c62;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .has-value.Select--single>.Select-control .Select-value .Select-value-label {
+    color: #ced3d6;
+  }
+  // sass-lint:enable class-name-format
+  .rank {
+    padding-top: 0;
+    &:after {
+      font-size: 135px;
+      left: 224px;
+    }
+  }
+  .rank-1,
+  .rank-2,
+  .rank-3,
+  .rank-other {
+    @extend .rank;
+  }
+  .react-bootstrap-table-page-btns-ul {
+    margin-right: -94px;
+  }
+}

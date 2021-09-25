@@ -1,0 +1,141 @@
+.attendance-button {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 20px 5px;
+  padding-left: 5px;
+  border: solid 2px rgba(206, 211, 214, .5);
+  position: relative;
+  cursor: pointer;
+  &.disabled {
+    background-color: #d2d2d2;
+    color: #a3a3a3;
+    border-radius: 4px;
+    border: .8 solid #d4d4d4;
+    &:hover {
+      background-color: #d2d2d2;
+      color: #a3a3a3;
+      border-radius: 4px;
+      border: .8 solid #d4d4d4;
+    }
+  }
+  &.red-bg {
+    background-color: #e3001e;
+  }
+  .attendance-content {
+    padding-left: 5px;
+    .attendance-name {
+      display: block;
+      font-family: FontBold;
+      font-size: 30px;
+      text-align: left;
+      text-transform: uppercase;
+      font-style: italic;
+      &.white-text {
+        color: #fff;
+      }
+    }
+    .attendance-record {
+      display: block;
+      font-style: italic;
+      text-align: left;
+      color: #f58220;
+      .substitute-text {
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-left: 5px;
+      }
+    }
+
+    .email {
+      font-family: FontRegularItalic;
+      font-size: 20px;
+      opacity: .36;
+    }
+  }
+
+  .attendance-icon {
+    .img {
+      width: 80px;
+    }
+  }
+
+  .avatar-icon {
+    text-align: left;
+    margin: 10px 10px;
+    overflow: hidden;
+    max-height: 110px;
+    padding: 0;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .3);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    .avatar {
+      backface-visibility: hidden;
+      vertical-align: top;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+  &:hover {
+    color: #ffffff;
+    border-radius: 4px;
+  }
+  .equipment {
+    position: absolute;
+    right: 5%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    img {
+      height: 80px;
+      margin-top: 10px;
+      object-fit: cover;
+    }
+    .sub-type {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #f06d1a;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+  .equipment {
+    text-align: right;
+    position: absolute;
+    right: 5%;
+    .img {
+      width: 80px;
+    }
+  }
+  .equipment-icon {
+    position: absolute;
+    right: 5%;
+    top: 5px;
+    .img {
+      width: 80px;
+    }
+  }
+}
+
+.attendance-button.center {
+  justify-content: center;
+  padding-left: 8px;
+  .attendance-record {
+    text-align: center;
+  }
+}
+
+.thumbnail {
+  border-radius: 0;
+}

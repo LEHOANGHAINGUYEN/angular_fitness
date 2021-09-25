@@ -1,0 +1,13 @@
+{
+  "UnauthorizeEndpoint": "https://api.orangetheory.co/proxy/no-auth/api",
+  "AuthorizeEndpoint": "https://api.orangetheory.co/proxy/api",
+  "OTumFranchiseEndpoint": "https://api.orangetheory.co/franchise",
+  "AuthorizeGlobalEndpoint": "https://api.orangetheory.co/fca-core/api",
+  "EdenMboEndpoint": "https://api.orangetheory.co/occi/mbo",
+  "PageSize": 50,
+  "cognito": {
+    "IDENTITY_POOL_ID": "us-east-1:1f7803c7-5dc8-4aa5-9068-e8f46da5827f",
+    "USER_POOL_ID": "us-east-1_O49KG3268",
+    "APP_CLIENT_ID": "71ievdi5kk4q13i4nhjlroqngq"
+  }
+}

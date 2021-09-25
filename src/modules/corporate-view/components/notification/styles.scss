@@ -1,0 +1,14 @@
+.notify-wrapper {
+  margin-right: 28px;
+  .notify-icon {
+    width: 17px;
+    height: 20px;
+  }
+  .badge-orange {
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    background-color: #f4821f;
+    color: #ffffff;
+  }
+}

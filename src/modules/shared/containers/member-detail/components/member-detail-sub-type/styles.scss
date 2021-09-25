@@ -1,0 +1,33 @@
+.container-toggle{
+  margin: 0 auto 0 auto;
+  width: 90%;
+  min-height: 50px;
+  padding-top: 50px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d1d1d1;
+  display: flex;
+  justify-content: center;
+  .toggle-wrapper{
+    display: flex;
+    margin-left: 80px;
+    .triangle{
+      width: 0;
+      height: 0;
+      border-top: 16px solid transparent;
+      border-bottom: 16px solid transparent;
+      border-left: 15px solid #f58220;
+    }
+    .title-toggle{
+      color: #9b9b9b;
+      font-size: 40px;
+      font-style: italic;
+      text-align: center;
+      line-height: 1;
+      padding: 0 0 0 10px;
+      font-weight: 900;
+      &.selected {
+        color: #f58220;
+      }
+    }
+  }
+}

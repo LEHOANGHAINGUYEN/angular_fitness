@@ -1,0 +1,11 @@
+.app-background {
+  width: 100%;
+  background-size: cover !important;
+  background: url('./images/Main_bg.svg') no-repeat center center;
+  min-height: 100%;
+
+  .app-container {
+    min-height: 100%;
+    position: relative;
+  }
+}

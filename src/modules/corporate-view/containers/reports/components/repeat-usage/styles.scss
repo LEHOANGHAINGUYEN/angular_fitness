@@ -1,0 +1,15 @@
+.repeat-usage{
+  padding-left: 18;
+  .view-btn {
+    width: 50px;
+    height: 20px;
+    font-size: 13px;
+    padding: 0;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px #b2b2b2;
+    &:hover{
+      color: black;
+    }
+  }
+}

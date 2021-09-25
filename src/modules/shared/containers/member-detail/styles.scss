@@ -1,0 +1,182 @@
+.member-detail-wrapper {
+  padding-top: 80px;
+  &:after {
+    content: ' ';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  .separate-container {
+    min-height: calc(100vh - 96px);
+  }
+  .left-container {
+    width: 25%;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    .member-area {
+      width: 100%;
+      top: 5%;
+      background: linear-gradient(267deg, #2b2c2e, #2c2d2f);
+      height: 341px;
+      .member-icon {
+        padding-top: 70px;
+        img {
+          width: 120px;
+          height: 120px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+          border-radius: 50%;
+          border: 2px solid #eee;
+          object-fit: cover;
+        }
+      }
+      .member-name {
+        text-transform: uppercase;
+        font-family: FontBold;
+        font-size: 45px;
+        padding-bottom: 30px;
+        color: #fff;
+      }
+    }
+    .metric-switch-area {
+      width: 100%;
+      height: calc(100vh - 433px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      &::-webkit-scrollbar-track {
+        background-color: black;
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar {
+        width: 8px;
+        background-color: black;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #7e7e7e;
+        border: 4px solid #555555;
+        border-radius: 4px;
+      }
+    }
+  }
+  .right-container {
+    float: left;
+    width: 75%;
+    padding-top: 40;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    .member-total-benchmarks-container {
+      min-height: 290px;
+      .title {
+        color: #d1d1d1;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: left;
+        padding: 8px 0 0 70px;
+        span {
+          font-family: FontBold;
+        }
+      }
+      .share-data-wrapper {
+        padding-top: 23px;
+        padding-left: 49px;
+        text-align: right;
+        .share-data {
+          span {
+            color: #39393a;
+            font-style: italic;
+            font-size: 25px;
+            font-weight: bold;
+            width: 60%;
+            text-transform: uppercase;
+          }
+        }
+        .switch-container {
+          padding-top: 4px;
+          text-align: left;
+        }
+      }
+      table.member-total-benchmarks-table {
+        margin: 0 auto 20 auto;
+        width: 90%;
+        border: none;
+        td {
+          height: 60px;
+          font-size: 23px;
+          text-align: center;
+          color: #39393a;
+          vertical-align: middle;
+          text-transform: uppercase;
+          span {
+            font-family: FontBold;
+          }
+          &:first-child {
+            font-weight: bold;
+            font-style: italic;
+            color: #f58220;
+          }
+          &:last-child {
+            font-weight: bold;
+          }
+        }
+        th {
+          @extend td;
+          border-bottom: 1px solid #dadada;
+          border-top: 1px solid #dadada;
+          font-weight: bold;
+          font-style: italic;
+        }
+        td,
+        th {
+          i.orange-star {
+            font-size: 18px;
+            color: #f58220;
+            margin-right: 10px;
+          }
+        }
+        td.no-data-text {
+          height: 250px;
+          font-size: 30px;
+          font-style: normal;
+          color: #aeaeae;
+          text-transform: none;
+          span {
+            font-family: FontRegular;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .member-detail-wrapper {
+    .left-container {
+      .wrapper {
+        min-height: 100%;
+        .member-area {
+          .title {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .member-detail-wrapper {
+    .left-container {
+      .wrapper {
+        .member-area {
+          height: auto;
+          position: initial;
+        }
+        .metric-switch-area {
+          position: initial;
+        }
+      }
+    }
+  }
+}

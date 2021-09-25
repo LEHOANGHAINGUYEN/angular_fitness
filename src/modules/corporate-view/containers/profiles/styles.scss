@@ -1,0 +1,81 @@
+.profiles-container {
+  padding: 40px;
+  h3,
+  h4,
+  button {
+    font-weight: bold;
+  }
+  .header-title {
+    text-align: left;
+  }
+  .content {
+    background-color: white;
+    padding-top: 20px;
+    .field {
+      width: 100%;
+      margin: 26px 0;
+      label {
+        width: 100%;
+      }
+      input {
+        width: 80%;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: solid 1px #dfe3e6;
+        padding: 12px;
+      }
+    }
+    .basic-info {
+      padding: 20px 0;
+      .avatar {
+        padding: 20px;
+        img {
+          width: 160px;
+          height: 160px;
+        }
+      }
+      .action {
+        margin: 20px;
+        text-align: center;
+        padding-top: unset;
+        button {
+          height: 40px;
+          width: 140px;
+          background-color: #f58220;
+          color: white;
+          border: none;
+          border-radius: 3px;
+        }
+      }
+    }
+    .detail-info {
+      text-align: left;
+      padding: 20px 45px;
+      .title {
+        border-bottom: solid 1px #dfe3e6;
+        margin-right: 50px;
+      }
+    }
+  }
+  .action {
+    text-align: right;
+    padding-top: 40px;
+    button {
+      width: 140px;
+      height: 40px;
+      border-radius: 5px;
+    }
+    .cancel-btn {
+      border: solid 2px #5a6064;
+      color: #595f63;
+      background-color: none;
+    }
+    .update-btn {
+      background-color: #f58220;
+      color: white;
+      border: none;
+      margin-left: 20px;
+    }
+  }
+}

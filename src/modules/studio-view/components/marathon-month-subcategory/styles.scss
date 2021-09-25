@@ -1,0 +1,73 @@
+.marathon-month-container {
+  .modal-content {
+    .modal-header {
+      border: none;
+      padding: 0;
+      .close {
+        display: none;
+      }
+    }
+    .modal-body {
+      .modal-body-title {
+        span {
+          font-size: 30px;
+          padding: 8px 30px 15px;
+          text-align: center;
+          display: block;
+        }
+        .square-wrapper {
+          text-align: center;
+          cursor: pointer;
+          padding-bottom: 20px;
+
+          .triangle-sub-marathon {
+            float: left;
+            margin-left: 40px;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+            border-left: 18px solid #f58220;
+          }
+
+          .name-sub {
+            height: 39px;
+            line-height: 39px;
+            font-size: 30px;
+            font-weight: 600;
+            color: #dadada;
+            margin-left: 53px;
+            text-transform: uppercase;
+            &.selected {
+              color: #f58220;
+            }
+          }
+          .value-sub {
+            font-size: 20px;
+            font-weight: 600;
+            width: 96px;
+            float: right;
+            background: #e0dce0;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      border: none;
+      display: flex;
+      justify-content: center;
+      .btn-primary {
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .marathon-month-container {
+    width: 600px;
+    margin: 100px auto;
+    .modal-content {
+      height: 262px;
+    }
+  }
+}

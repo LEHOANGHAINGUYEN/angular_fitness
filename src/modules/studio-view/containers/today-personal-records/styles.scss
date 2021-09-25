@@ -1,0 +1,210 @@
+.personal-record {
+  width: 100%;
+  padding-top: 100px;
+  .today-personal-record {
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 30px;
+  }
+
+  .left-container {
+    position: relative;
+    .title-personal-breaker {
+      text-align: center;
+      margin-top: 38px;
+      padding-top: 9px;
+      .text-title-personal-breaker {
+        padding: 0 5px;
+
+        span {
+          font-size: 26px;
+          letter-spacing: 1px;
+          color: #dadada;
+          font-family: FontBold;
+          text-transform: uppercase;
+          opacity: .35;
+        }
+      }
+      .date-time-picker {
+        display: flex;
+        justify-content: center;
+
+        .datetime-picker-wrapper {
+          width: 82%;
+
+          .input-group {
+            background-color: white;
+
+            .form-control {
+              padding: 24px 12px !important;
+              display: block;
+              border: none;
+            }
+          }
+        }
+      }
+
+      .input-group-addon {
+        background-color: white;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        width: 62px;
+
+        .glyphicon-calendar:before {
+          content: '\f0d7';
+          font-family: FontAwesome;
+        }
+      }
+
+      .bootstrap-datetimepicker-widget {
+        top: 48px !important;
+        width: 382px !important;
+        z-index: 10;
+      }
+    }
+
+    .date-time-rect-container {
+      display: block;
+      text-align: center;
+      margin: 55px 0 0 0;
+
+      .date-wapper {
+        margin: 0;
+        display: inline-block;
+        position: static;
+        width: 190px;
+        height: 190px;
+
+        .content-left,
+        .content-right {
+          width: 50%;
+          height: 160px;
+          font-size: 40px;
+        }
+
+        .content {
+          width: 100%;
+          position: relative;
+          top: -130px;
+
+          .date-text {
+            font-style: normal;
+            color: #f58220;
+          }
+
+          label {
+            @extend .date-text;
+            font-size: 30px;
+            font-weight: initial;
+          }
+
+          .date {
+            @extend .date-text;
+            font-size: 50px;
+            font-family: FontBold;
+          }
+        }
+      }
+    }
+
+    .border-bottom {
+      border: 1px solid #979797;
+      opacity: .4;
+      width: 95%;
+      margin: 15px auto 55px 17px;
+      ;
+    }
+
+    .text-type {
+      font-size: 30px;
+      letter-spacing: .6px;
+      text-align: center;
+      color: #fff;
+      font-family: FontBold;
+      text-transform: uppercase;
+      margin-left: 10px;
+
+      .date,
+      .challenge {
+        @extend .text-type;
+        font-size: 26px;
+        letter-spacing: .5px;
+        color: #d1d1d1;
+        ;
+        opacity: .35;
+      }
+    }
+
+    .icon-equipment {
+      text-align: center;
+      margin-top: 40px;
+
+      .img-icon {
+        width: 200px;
+      }
+    }
+  }
+
+  .right-container {
+    padding-top: 3%;
+
+    .personal-records-table {
+      table {
+        td {
+          font-size: 20px;
+        }
+
+        .records-difference {
+          color: #f06d1a;
+          font-weight: bold;
+        }
+      }
+
+      .text-time {
+        margin-bottom: unset;
+      }
+    }
+
+    .bootstrap-table {
+      padding-right: 15px;
+      padding-left: 23px;
+      padding-top: 0;
+    }
+
+    .table-container {
+      padding: 20px;
+    }
+
+    .react-bs-table-pagination {
+      margin-top: 30px;
+      position: absolute;
+      width: 100%;
+
+      .col-md-6.col-xs-6.col-sm-6.col-lg-6 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .row {
+        margin-top: 5px !important;
+        margin-right: -30px;
+        margin-left: -30px;
+      }
+
+      .btn {
+        height: 38px;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .personal-record {
+    .left-container {
+      .title-personal-breaker {
+        margin-top: 65px;
+      }
+    }
+  }
+}

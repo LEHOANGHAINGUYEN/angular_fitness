@@ -1,0 +1,45 @@
+$ErrorBorderColor: #a94442;
+.input-form {
+  position: relative;
+}
+
+.input-form:hover .text-danger-tooltip {
+  visibility: visible;
+}
+
+.input-form .text-danger-tooltip {
+  visibility: hidden;
+  display: block;
+  background-color: #fff3f3;
+  border: 1px solid $ErrorBorderColor;
+  color: #9f3a38;
+  text-align: left;
+  border-radius: 4px;
+  padding: 12px 10px;
+  position: absolute;
+  z-index: 110;
+  width: 500px;
+  min-height: 34px;
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  margin: 5px auto;
+}
+
+.input-form .text-danger-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #9f3a38 transparent;
+}
+
+.input-form.has-error {
+  input {
+    border-color: $ErrorBorderColor !important;
+    outline-color: $ErrorBorderColor !important;
+  }
+}

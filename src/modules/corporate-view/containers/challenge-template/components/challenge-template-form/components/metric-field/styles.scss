@@ -1,0 +1,44 @@
+.form-metric {
+  .btn.btn-add-metric {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    padding: 0;
+    i {
+      font-size: 14px;
+    }
+  }
+  .add-metric {
+    display: flex;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+  }
+  .metric-field {
+    border-radius: 1px;
+    background-color: #f7f7f7;
+    border: solid 1px #dfe3e6;
+    height: 40px;
+    padding: 8px 10px;
+    margin-bottom: 4px;
+  }
+  .btn-delete-metric {
+    float: right;
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    padding-top: 6px;
+    color: #b5b5b5;
+  }
+  .text-err {
+    color: #9f3a38;
+    font-size: 16px;
+  }
+  .range{
+    font-size: 14px;
+    padding-top: 4px;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+}

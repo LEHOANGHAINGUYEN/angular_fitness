@@ -1,0 +1,116 @@
+.corporate-app-background {
+  width: 100%;
+  background-color: #efefef;
+  min-height: 100%;
+  .app-container {
+    min-height: 100%;
+    position: relative;
+    .corporate-wrapper {
+      margin-left: 0;
+      margin-right: 0;
+      .right-content {
+        float: left;
+        padding-left: 100px;
+        width: 100%;
+        .challenges-wrapper {
+          margin-top: 37px;
+          .group-challenge-detail {
+            .top-challenge-detail {
+              padding-bottom: 40px;
+              .col-md-2 {
+                .icon-back {
+                  cursor: pointer;
+                  border-radius: 50%;
+                  height: 36px;
+                  padding: 5px 10px;
+                  background-color: white;
+                  border: none;
+                  box-shadow: 0 0 7.6px .4px rgba(60, 58, 56, .2);
+                  margin-left: 12px;
+                }
+              }
+              .col-md-3 {
+                .btn-action {
+                  position: absolute;
+                  margin: 78px 0 0 227px;
+                  .btn {
+                    border-radius: 5px;
+                    box-shadow: 0 0 7.6px .4px rgba(60, 58, 56, .2);
+                    border-color: transparent;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                    height: 40px;
+                    margin-left: 5px;
+                  }
+                  .btn-edit {
+                    @extend .btn;
+                    background-color: #f58220;
+                    padding: 0 34px;
+                  }
+                  .btn-delete {
+                    @extend .btn;
+                    background-color: #d9534f;
+                    padding: 0 28px;
+                  }
+                }
+              }
+            }
+          }
+          .row {
+            margin-left: 0;  // Override row margin of bootstrap
+            margin-right: 0;
+            .top {
+              padding-left: 25px;
+              padding-right: 25px;
+              // margin-top: 40px;
+            } // Title label, can reuse on every page
+            // .top-challenge-detail {
+            //   @extend .top;
+            //   .icon-back {
+            //     cursor: pointer;
+            //     .glyphicon-chevron-left:before {
+            //       content: "\E079";
+            //     }
+            //   }
+            // }
+            .title {
+              h3 {
+                margin: 15px 0;
+                font-size: 35px;
+                font-weight: 600;
+                font-stretch: condensed;
+                line-height: .6;
+                letter-spacing: .8px;
+                text-align: left;
+                color: #111111;
+              }
+            }
+            .btn-add,
+            .btn-delete {
+              width: 90%;
+            }
+            .btn-delete {
+              background-color: #d9534f !important;
+              font-size: 20px;
+              font-weight: 500;
+              width: 100px;
+            }
+          } // Adding margin top for row of top
+        }
+      }
+    }
+  }
+  .auth {
+    padding-top: 70px;
+  }
+  .text {
+    height: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: .6;
+    letter-spacing: .8px;
+    color: #111111;
+  }
+}

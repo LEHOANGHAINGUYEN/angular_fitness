@@ -1,0 +1,269 @@
+.corporate-report {
+  .reports {
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    margin-right: 20px;
+    .children {
+      width: 855px;
+      height: 324px;
+      background-color: #ffffff;
+      border: solid 1px #e4e6e7;
+      margin-left: 20px;
+    }
+    .corporate-search-box {
+      width: 100%;
+      height: 35px;
+      float: left;
+      margin-left: 26px;
+      background: #ffffff url('./images/search.svg') no-repeat scroll 10px;
+      background-size: 14px;
+      font-size: 15px;
+      padding-left: 35;
+      border-radius: 4px;
+      border: solid 1px #ced3d6;
+      text-align: left;
+    }
+    .date-time-picker {
+      width: 200px;
+      height: auto;
+      display: inline-block;
+      .input-group {
+        height: 0;
+      }
+    }
+    .glyphicon-calendar {
+      position: relative;
+      left: -2px;
+      top: -5px;
+    }
+    .bootstrap-datetimepicker-widget {
+      height: 370px;
+      top: -15px !important;
+      left: -150px !important;
+      border-radius: 0;
+      margin-right: auto;
+      margin-left: 100px;
+      margin-top: 50px;
+    }
+    .input-group .form-control {
+      position: static;
+      z-index: 2;
+      float: left;
+      width: 100%;
+      margin-bottom: 0;
+      .input-group-addon {
+        width: 20px;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 24;
+        span {
+          display: block;
+          cursor: pointer;
+          width: 25px;
+          height: 16px;
+        }
+      }
+    }
+    .react-bs-table-search-form {
+      .form-control {
+        text-align: left;
+      }
+      input {
+        z-index: 0;
+        padding-left: 40px;
+        margin-right: 20px;
+      }
+    }
+    .input-group-addon {
+      width: 1px;
+      font-size: 20px;
+      text-align: center;
+      padding-bottom: 0;
+      padding-left: 10px;
+    }
+    div.title-report {
+      width: 610px;
+      height: 63px;
+      border-left: none;
+      border-right: none;
+      border-width: 2px;
+      text-align: left;
+      margin-left: 22px;
+      margin-bottom: 15px;
+      padding-top: 14px;
+      .text {
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: condensed;
+        line-height: .48;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #111111;
+        margin: 8px auto;
+      }
+    }
+    .panel-filter {
+      background-color: #ffffff;
+      border: solid 1px #ced3d6;
+      border-style: solid;
+      border-color: #f48120;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      height: 100px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      .search-img {
+        width: 14px;
+        height: 15px;
+      }
+    }
+    .table-filter {
+      width: 100%;
+      height: 100px;
+      z-index: 10;
+      position: relative;
+      .title-filter {
+        height: 15px;
+        width: 100%;
+        font-size: 20px;
+        font-stretch: condensed;
+        font-weight: bold;
+        line-height: 1.75;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+      .title-search {
+        @extend .title-filter;
+        margin-left: 30px;
+      }
+      .title-filter-date {
+        height: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: condensed;
+        line-height: 1.75;
+        text-align: left;
+        color: #333333;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
+      .report-types {
+        width: 225px;
+      }
+      .select-category {
+        width: 125px;
+      }
+      .select-sort {
+        width: 110px;
+      }
+      .select-division {
+        width: 110px;
+      }
+      .form-control {
+        font-size: 15px;
+        height: 35px;
+      }
+      .challenge-type {
+        width: 220px;
+        padding-left: 20;
+      }
+      .time-frame {
+        width: 230px;
+        padding-left: 20px;
+      }
+      .select-studio {
+        padding-left: 40px;
+        width: 20%;
+      }
+      .select-fitness-equipment {
+        padding-left: 30px;
+        width: 250;
+      }
+      .search-box {
+        padding-left: 30px;
+        width: 36%;
+      }
+      .category {
+        width: 145px;
+        padding-left: 20;
+      }
+      .sort {
+        width: 130px;
+        padding-left: 20;
+      }
+      .division {
+        width: 130px;
+        padding-left: 20;
+      }
+      .date {
+        width: 230px;
+      }
+      .search {
+        padding-right: 30px;
+      }
+    }
+    .react-bs-table-container {
+      margin: 0 auto;
+    }
+    .react-bs-container-header {
+      height: 40px;
+      background-color: #444c52;
+      thead {
+        tr:first-child {
+          th {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .td-column-function-even {
+      background-color: #fff;
+    }
+    .td-column-function-odd {
+      background-color: #f6f6f6;
+    }
+    .form-group-sm .form-control {
+      width: 250px;
+      height: 35px;
+      float: right;
+      margin-bottom: 20px;
+      margin-right: 30px;
+      background: #ffffff url('./images/search.svg') no-repeat scroll 14px;
+      background-size: 14px;
+      font-size: 15px;
+      &::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
+    // sass-lint:disable class-name-format
+    .Select-clear-zone {
+      display: none;
+    }
+    // sass-lint:enable class-name-format
+  }
+  .button-export {
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f58220;
+    box-shadow: 0 0 7.6px .4px rgba(60, 58, 56, .2);
+    float: right;
+    margin-right: 18px;
+    .text-export {
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 1.44;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 13px;
+    }
+  }
+  .wrapper-count-member {
+    &.reports-total {
+      margin-right: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}

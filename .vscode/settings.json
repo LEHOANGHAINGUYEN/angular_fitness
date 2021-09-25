@@ -1,0 +1,86 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "node_modules": true,
+    "npm-debug.*": true,
+    "dist": false,
+    ".gitignore": true,
+    ".editorconfig": true,
+    "config": false,
+    ".vscode/chrome": true,
+    "**/coverage": true,
+    "README.md": false,
+    "**/log": true,
+    "typings": true,
+    "**/e2e-report": true,
+    "tools": true,
+    "**/version.json": true,
+    "**/npm-debug.log": true,
+    "cicd-pipeline.jpg": true,
+    "**/typedoc.json": true,
+    "**/.dockerignore": true,
+    "**/.tmp": true,
+    ".DS_Store": true,
+    "node_modules/": true,
+    "dist/": false,
+    "npm-debug.log": true,
+    ".idea/": true,
+    "build/": true,
+    "__MACOSX/": true
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  // Eslint configuration
+  "eslint.enable": true,
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": true,
+  // Beauty configuration
+  // Refer https://github.com/beautify-web/js-beautify#options for more details
+  "beautify.tabSize": 2,
+  "beautify.options": {
+    "indent_size": 2,
+    "indent_char": " ",
+    "indent_with_tabs": false,
+    "eol": "\n",
+    "end_with_newline": true,
+    // Beauty configuration specify for css
+    "css": {
+      "indent_size": 2,
+      "selector_separator_newline": true,
+      "newline_between_rules": true
+    },
+    "indent_level": 0,
+    "preserve_newlines": false,
+    "max_preserve_newlines": 10,
+    "space_in_paren": false,
+    "space_in_empty_paren": false,
+    "jslint_happy": true,
+    "space_after_anon_function": false,
+    "brace_style": "collapse",
+    "unindent_chained_methods": false,
+    "break_chained_methods": false,
+    "keep_array_indentation": false,
+    "unescape_strings": false,
+    "wrap_line_length": 0,
+    "e4x": false,
+    "comma_first": false,
+    "operator_position": "before-newline"
+  },
+  // Disable default validation of scss
+  "scss.validate": false,
+  // Sasslint configuration
+  "sasslint.enable": true,
+  // Extension manager configuration
+  // Include a list of extension that you wish to be installed
+  // Commands: F1 -> Extension Manager: Install Missing Extensions
+  "extensions.autoUpdate": true,
+  "extension-manager.extensions": [
+    "msjsdiag.debugger-for-chrome",
+    "dbaeumer.vscode-eslint",
+    "glen-84.sass-lint",
+    "michelemelluso.code-beautifier"
+  ]
+}

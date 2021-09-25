@@ -1,0 +1,113 @@
+.table-wrapper {
+  position: relative;
+  &.table-global {
+    padding-top: 80px;
+  }
+
+  .sk-overlay {
+    position: absolute;
+  } // Override css of this table to make suitable for this app
+  tr {
+    th {
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #444c52;
+    }
+  }
+  // sass for global
+  .table > .table-striped > .text-average {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .react-bs-table {
+    border: 1px solid #ced3d6;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+
+  .pagination > .active > a,
+  .pagination > .active > a:focus,
+  .pagination > .active > a:hover,
+  .pagination > .active > span,
+  .pagination > .active > span:focus,
+  .pagination > .active > span:hover {
+    background-color: #28292d;
+    border-color: #28292d;
+    color: #fff;
+  }
+  .pagination > li > a,
+  .pagination > li > span {
+    color: black;
+  }
+  .react-bs-table-pagination {
+    .btn {
+      height: 38px;
+      color: black;
+      background-color: #ffffff;
+      border-radius: 0;
+    }
+    .col-md-6.col-xs-6.col-sm-6.col-lg-6 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  td:focus,
+  th:focus {
+    outline: none !important;
+  }
+}
+
+.table-search-input {
+  @include transition(width 1s ease-in-out);
+  height: 40px;
+  text-align: left;
+  width: 100%;
+  background: #ffffff url('./images/search.svg') no-repeat scroll 15px;
+  background-size: 27px;
+  font-size: 20px;
+  padding-left: 46px;
+  border-radius: 4px;
+  border: solid 1px #ced3d6;
+  &.collapse {
+    display: block;
+    width: 0;
+  }
+  &.expand {
+    width: 100%;
+  }
+}
+
+.table-search-input::placeholder {
+  font-size: 17px;
+  color: #ced3d6;
+}
+
+// sass-lint:disable class-name-format
+.react-bs-table-sizePerPage-dropdown {
+  border-radius: 0;
+  .btn .caret {
+    margin-left: 3px;
+  }
+  .dropdown-menu {
+    padding: 7px 38px;
+    margin: 2px 0 0;
+    font-size: 15px;
+    min-width: 140px;
+    border-radius: 0;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  li:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+}
+// sass-lint:enable class-name-format
+
+.border-global {
+  border-bottom: 2px solid #dadada;
+  margin-bottom: 44px;
+  padding-top: 34px;
+}

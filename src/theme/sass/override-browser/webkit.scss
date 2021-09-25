@@ -1,0 +1,6 @@
+// Disabled blue field background
+textarea,
+input,
+*:focus {
+  outline: none !important;
+}
